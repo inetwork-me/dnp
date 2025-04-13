@@ -1,9 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap");
+/* Inter google font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+:root {
+	--foreground-rgb: #444444;
+	--background-rgb: #444444;
+}
 
 html {
 	scroll-behavior: smooth;
+	font-family: "Inter", sans-serif;
+}
+
+.dark {
+	--foreground-rgb: #444444;
+	--background-rgb: #444444;
+}
+
+body {
+	color: rgb(var(--foreground-rgb));
+	background: rgb(var(--background-rgb));
 }
