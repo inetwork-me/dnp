@@ -1,6 +1,3 @@
-// components
-import Button from "./Button";
-
 // Icons
 import FacebookIcon from "@/public/icons/Facebook.svg";
 import InstagramIcon from "@/public/icons/Instagram.svg";
@@ -9,15 +6,15 @@ import TikTokIcon from "@/public/icons/TikTok.svg";
 const SocialIcons = () => {
 	return (
 		<div className='flex gap-4'>
-			<Button to='https://www.facebook.com/'>
+			<button className=' cursor-pointer'>
 				<FacebookIcon />
-			</Button>
-			<Button to='https://www.instagram.com/'>
+			</button>
+			<button className=' cursor-pointer'>
 				<InstagramIcon />
-			</Button>
-			<Button to='https://www.tiktok.com/'>
+			</button>
+			<button className=' cursor-pointer'>
 				<TikTokIcon />
-			</Button>
+			</button>
 		</div>
 	);
 };
