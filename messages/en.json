@@ -1,0 +1,43 @@
+{
+	"app": {
+		"en": "English",
+		"ar": "Arabic",
+		"myAccount": "My account",
+		"trackYourOrder": "Track your order",
+		"search": "Search...",
+		"addToCart": "Add to cart",
+		"shopNow": "Shop Now",
+		"notFound": {
+			"message": "The page you are looking for does not exist.",
+			"backToHome": " Go back to home page"
+		},
+		"Best program for your fitness": "Best program for your fitness",
+		"Discover our best-selling products loved by many": "Discover our best-selling products loved by many!",
+		"Top Selling Bundles": "Top Selling Bundles",
+		"Explore our fitness programs to reach your best physical shape": "Explore our fitness programs to reach your best physical shape.",
+
+		"navigation": {
+			"home": "Home",
+			"offersAndDiscounts": "Offers & Discounts",
+			"doctors": "Doctors",
+			"bmiCalculator": "Bmi calculator",
+			"packages": "Packages",
+			"packagesList": "Packages List",
+			"slimmingSessions": "Slimming Sessions",
+			"onLineConsultation": "OnLine Consultation",
+			"recipes": "Recipes",
+			"blogs": "Blogs",
+			"devices": "Devices"
+		},
+
+		"categories": {
+			"title": "All Categories",
+			"sportsNutrition": "Sports Nutrition",
+			"bodyBuilder": "Body Builder",
+			"optimumNutrition": "Optimum Nutrition",
+			"topSelling": "Top Selling",
+			"topProducts": "Top Products",
+			"healthPackages": "Health Packages"
+		}
+	}
+}

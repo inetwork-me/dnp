@@ -3,21 +3,23 @@ import Link from "next/link";
 // icons
 import ArrowRightIcon from "@/public/icons/arrow-right.svg";
 import ListIcon from "@/public/icons/list.svg";
-
-const categoriesList = [
-	{ name: "Sports Nutrition", slug: "sportsNutrition" },
-	{ name: "Body Builder", slug: "bodyBuilder" },
-	{ name: "Optimum Nutrition", slug: "optimumNutrition" },
-	{ name: "Top Selling", slug: "topSelling" },
-	{ name: "Top products", slug: "topProducts" },
-	{ name: "Health Packages", slug: "healthPackages" },
-];
+import { useTranslations } from "next-intl";
 
 const Categories = () => {
+	const t = useTranslations("app");
+
+	const categoriesList = [
+		{ name: t("categories.sportsNutrition"), slug: "sportsNutrition" },
+		{ name: t("categories.bodyBuilder"), slug: "bodyBuilder" },
+		{ name: t("categories.optimumNutrition"), slug: "optimumNutrition" },
+		{ name: t("categories.topSelling"), slug: "topSelling" },
+		{ name: t("categories.topProducts"), slug: "topProducts" },
+		{ name: t("categories.healthPackages"), slug: "healthPackages" },
+	];
 	return (
 		<aside className='w-[297px] min-h-[300px] flex flex-col rounded-xl filter-drop-shadow bg-white'>
-			<h3 className='bg-[#723881] text-white py-3 px-4 text-lg font-medium flex items-center rounded-tl-xl rounded-tr-xl'>
-				<ListIcon className=' mr-2' /> All Categories
+			<h3 className='bg-[#723881] text-white py-3 px-4 text-lg font-medium flex items-center gap-2 rounded-tl-xl rounded-tr-xl'>
+				<ListIcon className='' /> {t("categories.title")}
 			</h3>
 			<ul>
 				{categoriesList.length > 0 ? (
@@ -31,7 +33,7 @@ const Categories = () => {
 									index === categoriesList.length - 1 ? "rounded-b-xl" : ""
 								}`}>
 								{category.name}
-								<ArrowRightIcon className=' text-gray-600' />
+								<ArrowRightIcon className=' text-gray-600 rtl:rotate-180' />
 							</Link>
 						</li>
 					))

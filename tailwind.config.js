@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const rtl = require("tailwindcss-rtl");
+
 module.exports = {
 	darkMode: "class",
 	content: [
@@ -8,15 +10,19 @@ module.exports = {
 	],
 	theme: {
 		extend: {
+			fontFamily: {
+				arabic: ["Cairo", "sans-serif"], // arabic font
+				latin: ["Inter", "sans-serif"], // english font
+			},
 			colors: {
 				primary: {
-					DEFAULT: "#B26BCA", // Add this line to use 'primary' directly
+					DEFAULT: "#B26BCA",
 					50: "#f7f1fa",
 					100: "#efe3f5",
 					200: "#dec7eb",
 					300: "#ceabe1",
 					400: "#bd8fd7",
-					500: "#B26BCA", // Your specified color
+					500: "#B26BCA",
 					600: "#9c56b8",
 					700: "#864499",
 					800: "#6e377c",
@@ -71,5 +77,5 @@ module.exports = {
 			},
 		},
 	},
-	plugins: [],
+	plugins: [rtl()],
 };

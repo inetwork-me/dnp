@@ -1,0 +1,44 @@
+{
+	"app": {
+		"en": "الانجليزية",
+		"ar": "العربية",
+		"home": "الرئيسية",
+		"myAccount": "حسابي",
+		"trackYourOrder": "تتبع طلبك",
+		"search": "البحث...",
+		"addToCart": "أضف إلى السلة",
+		"shopNow": "تسوق الآن",
+
+		"Best program for your fitness": "أفضل برنامج للياقة البدنية الخاصة بك",
+		"Discover our best-selling products loved by many": "اكتشف منتجاتنا الأكثر مبيعاً والتي يحبها الكثيرون!",
+		"Top Selling Bundles": "أفضل الحزم مبيعًا",
+		"Explore our fitness programs to reach your best physical shape": "استكشف برامج اللياقة البدنية لدينا للوصول إلى أفضل شكل بدني لديك.",
+
+		"notFound": {
+			"message": " الصفحة التي تبحث عنها غير موجودة.",
+			"backToHome": "العودة للصفحة الرئيسية"
+		},
+		"navigation": {
+			"home": "الرئيسية",
+			"offersAndDiscounts": "العروض والخصومات",
+			"doctors": "الأطباء",
+			"bmiCalculator": "حاسبة مؤشر كتلة الجسم",
+			"packages": "الباقات",
+			"packagesList": " قائمة الباقات",
+			"slimmingSessions": "جلسات التخسيس",
+			"onLineConsultation": "استشارة عبر الإنترنت",
+			"recipes": "الوصفات",
+			"blogs": "مقالات",
+			"devices": "الأجهزة"
+		},
+		"categories": {
+			"title": " جميع التصنيفات",
+			"sportsNutrition": "التغذية الرياضية",
+			"bodyBuilder": " كمال أجسام ",
+			"optimumNutrition": "التغذية المثالية ",
+			"topSelling": "الأكثر مبيعا",
+			"topProducts": " أفضل المنتجات",
+			"healthPackages": "حزم الصحة "
+		}
+	}
+}

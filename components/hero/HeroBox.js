@@ -4,8 +4,10 @@ import ImgTextContainer from "../ImgTextContainer";
 import heroImage from "@/public/images/heroImage.png";
 import productImg2 from "@/public/images/productImg2.png";
 import productImg1 from "@/public/images/productImg1.png";
+import { useTranslations } from "next-intl";
 
 const HeroBox = () => {
+	const t = useTranslations("app");
 	return (
 		<div className='w-[952px] flex flex-row  justify-end gap-8 p-0 '>
 			<ImgTextContainer
@@ -14,7 +16,7 @@ const HeroBox = () => {
 				imgBoxSize='w-[624px]'
 				containerTextSize='w-[60%]'
 				altText='hero image'
-				buttonText={"Shop Now"}
+				buttonText={t("shopNow")}
 				text={"Get in shape today with our premium product."}
 			/>
 			<aside className='w-[296px] flex flex-col gap-8'>
@@ -24,7 +26,7 @@ const HeroBox = () => {
 					btnHeight='h-[40px]'
 					imgHeight='h-[207px] w-[280px]'
 					altText='product image'
-					buttonText={"Shop Now"}
+					buttonText={t("shopNow")}
 					containerTextSize='w-[70%]'
 					leftPosition='left-[20px]'
 					text={"Acquire the protein bundle now."}
@@ -36,7 +38,7 @@ const HeroBox = () => {
 					imgHeight='h-[207px] w-[280px]'
 					altText='product image'
 					containerTextSize='w-[70%]'
-					buttonText={"Shop Now"}
+					buttonText={t("shopNow")}
 					leftPosition='left-[20px]'
 					text={"Sale on protein products with 35% off "}
 				/>

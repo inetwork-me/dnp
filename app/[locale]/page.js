@@ -1,5 +1,6 @@
-import BestProgramForYou from "@/components/bestProgramForYou/BestProgramForYou";
+// components
 import Hero from "@/components/hero/Hero";
+import BestProgramForYou from "@/components/bestProgramForYou/BestProgramForYou";
 import TopSellingProducts from "@/components/topSellingProducts/TopSellingProducts";
 
 export default function Page() {

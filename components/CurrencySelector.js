@@ -40,13 +40,23 @@ const CurrencySelector = () => {
 		localStorage.setItem("currency", currency);
 		setCurrentCurrency(currency);
 		setIsOpen(false);
-		// You might want to trigger a context update or refetch data with new currency
 	};
 
+	useEffect(() => {
+		const handleOutsideClick = (e) => {
+			if (!e.target.closest(".dropdown")) {
+				setIsOpen(false);
+			}
+		};
+
+		document.addEventListener("click", handleOutsideClick);
+		return () => document.removeEventListener("click", handleOutsideClick);
+	}, []);
+
 	return (
-		<div className='relative' onClick={(e) => e.stopPropagation()}>
+		<div className='relative dropdown' onClick={(e) => e.stopPropagation()}>
 			<button
-				className='flex items-center gap-2 pr-2 border-r border-gray-200 cursor-pointer'
+				className='flex items-center gap-2 pr-2 rtl:pr-0 rtl:pl-2  rtl:border-l rtl:border-0 border-r border-gray-200 cursor-pointer'
 				onClick={handleDropdownToggle}>
 				<CurrencyIcon />
 				<span className='text-sm text-gray-600'>

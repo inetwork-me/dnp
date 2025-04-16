@@ -1,5 +1,5 @@
-import TopNavLinks from "./TopNavLinks";
 import SocialIcons from "../SocialIcons";
+import TopNavLinks from "./TopNavLinks";
 
 const TopNav = () => {
 	return (

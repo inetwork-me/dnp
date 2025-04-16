@@ -1,5 +1,5 @@
 // Icons
-import FacebookIcon from "@/public/icons/Facebook.svg";
+import FacebookIcon from "@/public/icons/facebook.svg";
 import InstagramIcon from "@/public/icons/Instagram.svg";
 import TikTokIcon from "@/public/icons/TikTok.svg";
 

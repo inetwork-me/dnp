@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 // components
 import NavLink from "../NavLink";
 import LanguageSelector from "../LanguageSelector";
@@ -9,19 +10,23 @@ import UserIcon from "@/public/icons/UserIcon.svg";
 import ThemeToggle from "../ThemeToggle";
 
 const TopNavLinks = () => {
+	const t = useTranslations("app");
+
 	return (
 		<div className='flex items-center gap-4'>
 			<NavLink navigate={"/trackYourOrder"}>
 				<TruckIcon />
 				<span className='text-sm font-medium text-gray-600 '>
-					Track your order
+					{t("trackYourOrder")}
 				</span>
 			</NavLink>
 			<LanguageSelector />
 			<CurrencySelector />
 			<NavLink navigate={"/myAccount"}>
 				<UserIcon />
-				<span className='text-sm font-medium text-gray-600 '>My account</span>
+				<span className='text-sm font-medium text-gray-600 '>
+					{t("myAccount")}
+				</span>
 			</NavLink>
 
 			<ThemeToggle />

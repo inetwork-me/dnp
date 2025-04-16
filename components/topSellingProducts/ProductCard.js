@@ -10,8 +10,10 @@ import { HeartIcon as FilledHeartIcon } from "@heroicons/react/24/solid";
 
 import StarIcon from "@/public/icons/star.svg";
 import HalfStarIcon from "@/public/icons/halfStar.svg";
+import { useTranslations } from "use-intl";
 
 const ProductCard = ({ product }) => {
+	const t = useTranslations("app");
 	const [isFavorite, setIsFavorite] = useState(false);
 
 	const toggleFavorite = (e) => {
@@ -60,7 +62,7 @@ const ProductCard = ({ product }) => {
 					<p className='text-2xl font-semibold text-[#030712]'>817 L.E</p>
 				</div>
 				<button className='relative w-[280px] h-[47px] text-[16px] font-medium leading-7 text-white rounded-lg flex justify-center items-center p-2 z-10 cursor-pointer bg-[#B26BCA] hover:bg-[#723881] transition-all '>
-					Add to Cart
+					{t("addToCart")}
 				</button>
 			</div>
 		</div>
