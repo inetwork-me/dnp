@@ -4,35 +4,13 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useRef, useState } from "react";
 import { useTranslations } from "next-intl";
+import { navItems } from "@/fakeData/data";
 
 const Navigation = () => {
 	const pathname = usePathname();
 	const [openDropdown, setOpenDropdown] = useState(null);
 	const t = useTranslations("app");
 	const timeoutRef = useRef(null);
-
-	// Define the navigation items
-	const navItems = [
-		{ name: t("navigation.home"), path: "/" },
-		{ name: t("navigation.offersAndDiscounts"), path: "/offersAndDiscounts" },
-		{ name: t("navigation.doctors"), path: "/doctors" },
-		{ name: t("navigation.bmiCalculator"), path: "/bmiCalculator" },
-		{
-			name: t("navigation.packages"),
-			subPages: [
-				{ name: t("navigation.packagesList"), path: "/packages" },
-				{
-					name: t("navigation.onLineConsultation"),
-					path: "/onLineConsultation",
-				},
-				{ name: t("navigation.slimmingSessions"), path: "/slimmingSessions" },
-			],
-			path: "/packages",
-		},
-		{ name: t("navigation.recipes"), path: "/recipes" },
-		{ name: t("navigation.blogs"), path: "/blogs" },
-		{ name: t("navigation.devices"), path: "/devices" },
-	];
 
 	// Handle mouse enter and leave events for dropdowns
 	const handleMouseEnter = (index) => {
@@ -65,7 +43,7 @@ const Navigation = () => {
 												? "text-gray-700 font-medium"
 												: "text-gray-600 hover:text-gray-700"
 										} transition-colors duration-200 flex items-center cursor-pointer group`}>
-										{item.name}
+										{t(item.name)}
 										<svg
 											className='w-4 h-4 ml-1 transition-all duration-300 ease-in-out group-hover:translate-y-1'
 											fill='none'
@@ -99,7 +77,7 @@ const Navigation = () => {
 															: "text-gray-600 hover:bg-gray-100"
 													} block px-4 py-2 text-sm mx-3 rounded-md`}
 													onClick={() => setOpenDropdown(null)}>
-													{subPage.name}
+													{t(subPage.name)}
 												</Link>
 											))}
 										</div>
@@ -113,7 +91,7 @@ const Navigation = () => {
 											? "text-gray-700 font-medium"
 											: "text-gray-600 hover:text-gray-700"
 									} transition-colors duration-200`}>
-									{item.name}
+									{t(item.name)}
 								</Link>
 							)}
 						</div>

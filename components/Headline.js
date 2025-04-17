@@ -1,6 +1,6 @@
 const Headline = ({ title, description }) => {
 	return (
-		<div className='flex flex-col justify-center items-start gap-4 p-0 text-start mb-6'>
+		<div className='flex flex-col justify-center items-start gap-4 p-0 text-start mb-10'>
 			<h2 className=' text-[40px] leading-[51px] font-semibold text-[#030712]'>
 				{title}
 			</h2>

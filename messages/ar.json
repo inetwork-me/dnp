@@ -14,6 +14,20 @@
 		"Top Selling Bundles": "أفضل الحزم مبيعًا",
 		"Explore our fitness programs to reach your best physical shape": "استكشف برامج اللياقة البدنية لدينا للوصول إلى أفضل شكل بدني لديك.",
 
+		"Sale on protein products with 35% off": "تخفيضات على منتجات البروتين بخصم 35%",
+		"Acquire the protein bundle now": "احصل على حزمة البروتين الآن.",
+
+		"Products on sale": "المنتجات المعروضة للبيع",
+		"Discover our range of discounted products—don't miss out!": "اكتشف مجموعتنا من المنتجات المخفضة - لا تفوتها!",
+
+		"Top Selling Products": "المنتجات الأكثر مبيعًا",
+
+		"Bundles on sale": "الحزم المعروضة للبيع",
+		"Discover our best-selling bundles loved by many": "اكتشف مجموعاتنا الأكثر مبيعًا والتي يحبها الكثيرون!",
+
+		"Shop By brand": " تسوق حسب العلامة التجارية",
+		"Discover brands works with dnp and selling together": "اكتشف العلامات التجارية التي تعمل مع dnp وتبيع معًا",
+
 		"notFound": {
 			"message": " الصفحة التي تبحث عنها غير موجودة.",
 			"backToHome": "العودة للصفحة الرئيسية"
@@ -39,6 +53,29 @@
 			"topSelling": "الأكثر مبيعا",
 			"topProducts": " أفضل المنتجات",
 			"healthPackages": "حزم الصحة "
-		}
+		},
+		"Dashboard": " لوحة التحكم",
+		"My orders": " طلباتي",
+		"My reviews": " تقييماتي",
+		"Your cart": " سلة التسوق",
+		"Wishlist": " قائمة المفضلة",
+		"ordersAndShipping": "الطلبات و الشحن",
+		"FAQ": "الأسئلة الشائعة",
+		"ExchangeAndRefundPolicy": "سياسة الاستبدال والاسترداد",
+		"TermsOfUse": " شروط الاستخدام",
+		"PrivacyAndPolicy": " سياسة الخصوصية ",
+		"Website": " الموقع",
+		"Products": "المنتجات",
+		"bundles": "الحزم",
+		"bestSellers": "الأكثر مبيعا",
+		"newArrivals": " وصل حديثا",
+		"Sale": "التخفيضات",
+		"contactsUs": "تواصل معنا",
+		"Categories": "التصنيفات",
+		"Copyright": "جميع الحقوق محفوظة. حقوق النشر © ",
+		"Order by WhatsApp": "اطلب عبر واتساب",
+		"Flavours": "النكهات",
+		"Sold by": "تباع من خلال",
+		"Calories Guide": "دليل السعرات الحرارية"
 	}
 }

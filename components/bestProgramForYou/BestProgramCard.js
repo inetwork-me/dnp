@@ -33,7 +33,9 @@ const BestProgramCard = ({ program }) => {
 						</h3>
 						<Link
 							href={program.link}
-							className='relative w-10 h-10 rounded-full flex justify-center items-center p-2 z-10 cursor-pointer bg-[#B26BCA] hover:bg-[#723881] transition-all duration-300 transform hover:-rotate-45 hover:-translate-y-1 hover:translate-x-1'>
+							className='relative w-10 h-10 rounded-full flex justify-center items-center p-2 z-10 cursor-pointer bg-[#B26BCA] hover:bg-[#723881] transition-all duration-300 transform
+    hover:-rotate-45 hover:-translate-y-1 hover:translate-x-1
+    rtl:rotate-180  rtl:hover:rotate-[217deg] rtl:hover:translate-y-1 rtl:hover:translate-x-1'>
 							<ArrowUpRight />
 						</Link>
 					</div>

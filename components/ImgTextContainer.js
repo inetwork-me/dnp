@@ -24,6 +24,7 @@ const ImgTextContainer = ({
 					className={`w-full ${imgHeight} `}
 					priority
 				/>
+
 				<div
 					className={`absolute ${containerTextSize} inset-0 ${topPosition} ${leftPosition} flex flex-col justify-center items-start   bg-opacity-40 text-white p-4 text-start gap-[40px]`}>
 					{isHero ? (

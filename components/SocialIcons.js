@@ -1,20 +1,13 @@
-// Icons
-import FacebookIcon from "@/public/icons/facebook.svg";
-import InstagramIcon from "@/public/icons/Instagram.svg";
-import TikTokIcon from "@/public/icons/TikTok.svg";
-
-const SocialIcons = () => {
+const SocialIcons = ({ icons }) => {
 	return (
 		<div className='flex gap-4'>
-			<button className=' cursor-pointer'>
-				<FacebookIcon />
-			</button>
-			<button className=' cursor-pointer'>
-				<InstagramIcon />
-			</button>
-			<button className=' cursor-pointer'>
-				<TikTokIcon />
-			</button>
+			{icons.map(({ id, icon }) => {
+				return (
+					<button key={id} className=' cursor-pointer'>
+						{icon}
+					</button>
+				);
+			})}
 		</div>
 	);
 };

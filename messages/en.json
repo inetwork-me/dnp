@@ -16,6 +16,20 @@
 		"Top Selling Bundles": "Top Selling Bundles",
 		"Explore our fitness programs to reach your best physical shape": "Explore our fitness programs to reach your best physical shape.",
 
+		"Top Selling Products": "Top Selling Products",
+
+		"Sale on protein products with 35% off": "Sale on protein products with 35% off",
+		"Acquire the protein bundle now": "Acquire the protein bundle now.",
+
+		"Products on sale": "Products on sale",
+		"Discover our range of discounted products—don't miss out!": "Discover our range of discounted products—don't miss out!",
+
+		"Bundles on sale": "Bundles on sale",
+		"Discover our best-selling bundles loved by many": "Discover our best-selling bundles loved by many!",
+
+		"Shop By brand": "Shop By brand",
+		"Discover brands works with dnp and selling together": "Discover brands works with dnp and selling together",
+
 		"navigation": {
 			"home": "Home",
 			"offersAndDiscounts": "Offers & Discounts",
@@ -38,6 +52,31 @@
 			"topSelling": "Top Selling",
 			"topProducts": "Top Products",
 			"healthPackages": "Health Packages"
-		}
+		},
+
+		"Dashboard": "Dashboard",
+		"My orders": "My orders",
+		"My reviews": "My reviews",
+		"Your cart": "Your cart",
+		"Wishlist": "Wishlist",
+		"ordersAndShipping": "Orders & Shipping",
+		"FAQ": "FAQ",
+		"ExchangeAndRefundPolicy": "Exchange & refund policy",
+		"TermsOfUse": "Terms of use",
+		"PrivacyAndPolicy": "Privacy & Policy",
+		"Website": "Website",
+		"Products": "Products",
+		"bundles": "Bundles",
+		"bestSellers": "Best Sellers",
+		"newArrivals": "New Arrivals",
+		"Sale": "Sale",
+		"contactsUs": "Contacts Us",
+		"Categories": "Categories",
+		"Copyright": "All rights reserved. Copyright © ",
+
+		"Order by WhatsApp": "Order by WhatsApp",
+		"Flavours": "Flavours",
+		"Sold by": "Sold by",
+		"Calories Guide": "Calories Guide"
 	}
 }

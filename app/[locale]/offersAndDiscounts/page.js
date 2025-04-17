@@ -1,3 +1,14 @@
+import BreadCrumb from "@/components/BreadCrumb";
+import ProductDetails from "@/components/productDetails/ProductDetails";
+
+import { useTranslations } from "next-intl";
+
 export default function page() {
-	return <div>Offers & Discounts Pages</div>;
+	const t = useTranslations("app");
+	return (
+		<section>
+			<BreadCrumb currentPage={t("navigation.offersAndDiscounts")} />
+			<ProductDetails />
+		</section>
+	);
 }

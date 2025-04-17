@@ -18,8 +18,6 @@ const MiddleNav = () => {
 
 	const handleSearchSubmit = (e) => {
 		e.preventDefault();
-		// Implement search functionality here
-		console.log("Searching for:", searchQuery);
 	};
 
 	return (
@@ -34,7 +32,7 @@ const MiddleNav = () => {
 								alt='DNP Logo'
 								width={151}
 								height={64}
-								className='h-[64px] w-[151px] '
+								className='h-[64px] w-[151px]'
 							/>
 						</div>
 					</Link>
