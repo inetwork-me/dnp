@@ -10,6 +10,9 @@ module.exports = {
 	],
 	theme: {
 		extend: {
+			transitionProperty: {
+				"max-height": "max-height",
+			},
 			fontFamily: {
 				arabic: ["Cairo", "sans-serif"], // arabic font
 				latin: ["Inter", "sans-serif"], // english font

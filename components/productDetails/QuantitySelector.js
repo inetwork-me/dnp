@@ -2,7 +2,7 @@ import React from "react";
 import PlusIcon from "@/public/icons/plus.svg";
 import MinusIcon from "@/public/icons/minus.svg";
 
-const QuantitySelector = ({ quantity, setQuantity, t }) => {
+const QuantitySelector = ({ quantity, setQuantity, t, openModal }) => {
 	const handleQuantityChange = (newQuantity) => {
 		if (newQuantity >= 1) {
 			setQuantity(newQuantity);
@@ -30,7 +30,9 @@ const QuantitySelector = ({ quantity, setQuantity, t }) => {
 				</button>
 			</div>
 
-			<button className='text-[16px] leading-7 font-medium cursor-pointer underline text-[#B26BCA] hover:text-[#9333EA]'>
+			<button
+				onClick={openModal}
+				className='text-[16px] leading-7 font-medium cursor-pointer underline text-[#B26BCA] hover:text-[#9333EA]'>
 				{t("Calories Guide")}
 			</button>
 		</div>

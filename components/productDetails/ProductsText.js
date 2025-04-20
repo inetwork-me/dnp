@@ -9,7 +9,7 @@ import PriceBox from "./PriceBox";
 import QuantitySelector from "./QuantitySelector";
 import { useTranslations } from "next-intl";
 
-const ProductsText = () => {
+const ProductsText = ({ openModal }) => {
 	const t = useTranslations("app");
 	const [selectedFlavour, setSelectedFlavour] = useState("Chocolate");
 	const [quantity, setQuantity] = useState(1);
@@ -33,7 +33,7 @@ const ProductsText = () => {
 				</p>
 
 				{/* Rating */}
-				<RatingStars editable={true} />
+				<RatingStars editable={true} showRating={true} rating={4.5} />
 
 				{/* Price */}
 				<PriceBox currentPrice='817' oldPrice='1200' discount={40} />
@@ -49,7 +49,12 @@ const ProductsText = () => {
 
 			<div className='w-full flex flex-col gap-8 '>
 				{/* Quantity and Calories */}
-				<QuantitySelector t={t} quantity={quantity} setQuantity={setQuantity} />
+				<QuantitySelector
+					t={t}
+					quantity={quantity}
+					setQuantity={setQuantity}
+					openModal={openModal}
+				/>
 
 				{/* Buttons */}
 				<div className='w-full flex flex-col md:flex-row gap-8'>

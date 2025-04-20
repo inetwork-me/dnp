@@ -33,6 +33,19 @@ import ProdSlide1 from "@/public/images/products/slide1.png";
 import ProdSlide2 from "@/public/images/products/slide2.png";
 import ProdSlide3 from "@/public/images/products/slide3.png";
 
+// according icon
+import InfoIcon from "@/public/icons/info.svg";
+import Specification from "@/public/icons/specification.svg";
+import HowToUse from "@/public/icons/how-to-use.svg";
+import Caution from "@/public/icons/caution.svg";
+import ShippingAndDelivery from "@/public/icons/Shipping&Delivery.svg";
+import ReturnPolicy from "@/public/icons/Returns-Policy.svg";
+
+// comments images
+import Avatar1 from "@/public/images/Avatar1.png";
+import Avatar2 from "@/public/images/Avatar2.png";
+import Avatar3 from "@/public/images/Avatar3.png";
+
 //  navigation items
 export const navItems = [
 	{ name: "navigation.home", path: "/" },
@@ -344,5 +357,106 @@ export const productImages = [
 	{
 		id: 5,
 		image: ProductImg3,
+	},
+];
+
+export const productAccordingList = [
+	{
+		id: 1,
+		question: "Description",
+		answer:
+			"Experience 100% natural, intensive hydration that soothes dry lips effortlessly",
+		icon: <InfoIcon />,
+	},
+	{
+		id: 2,
+		question: "Specifications",
+		answer:
+			"Cocos Nucifera (Coconut) Oil, Butyrospermum Parkii (Shea Butter), Theobroma Cacao (Cocoa) Seed Butter, Cera Alba (Beeswax), Olea Europaea (Olive) Oil, Prunus Amygdalus Dulcis (Sweet Almond) Oil, Tocopherol (Vitamin E), Strawberry Extract.",
+		icon: <Specification />,
+	},
+	{
+		id: 3,
+		question: "How to use",
+		answer: "Take 1 capsule daily with a meal.",
+		icon: <HowToUse />,
+	},
+	{
+		id: 4,
+		question: "Caution",
+		answer:
+			"For external use only. Avoid contact with eyes. Discontinue use if irritation occurs. Keep out of reach of children. Store in a cool dry place.",
+		icon: <Caution />,
+	},
+	{
+		id: 5,
+		question: "Shipping & Delivery",
+		answer: `Orders are shipped within 2-3 business days and may take up to 7 working days to reach you.`,
+		icon: <ShippingAndDelivery />,
+	},
+	{
+		id: 6,
+		question: "Returns Policy",
+		answer:
+			"For external use only. Avoid contact with eyes. Discontinue use if irritation occurs. Keep out of reach of children. Store in a cool dry place.",
+		icon: <ReturnPolicy />,
+	},
+];
+
+export const commentsList = [
+	{
+		id: 1,
+		date: "2023-05-20",
+		ratingCount: 4,
+		comment:
+			"I’ve struggled with dry skin for years, but after using the recommended products, my skin feels hydrated and smooth. Love it!",
+		user: {
+			name: "Nadia S",
+			image: Avatar1,
+		},
+	},
+	{
+		id: 2,
+		date: "2024-04-20",
+		ratingCount: 4,
+		comment:
+			"Finally found products that don’t irritate my sensitive skin. The routine builder helped me pick exactly what I needed!",
+		user: {
+			name: "Amira K.",
+			image: Avatar2,
+		},
+	},
+	{
+		id: 3,
+		date: "2025-01-01",
+		ratingCount: 4,
+		comment:
+			"Great variety of high-quality products. My skincare routine has never been this easy and effective, i love it",
+		user: {
+			name: "Sara M.",
+			image: Avatar3,
+		},
+	},
+	{
+		id: 5,
+		date: "2022-03-10",
+		ratingCount: 4,
+		comment:
+			"I’ve struggled with dry skin for years, but after using the recommended products, my skin feels hydrated and smooth. Love it!",
+		user: {
+			name: "Nadia S",
+			image: Avatar1,
+		},
+	},
+	{
+		id: 99,
+		date: "2022-10-19",
+		ratingCount: 4,
+		comment:
+			"I’ve struggled with dry skin for years, but after using the recommended products, my skin feels hydrated and smooth. Love it!",
+		user: {
+			name: "Nadia S",
+			image: Avatar3,
+		},
 	},
 ];

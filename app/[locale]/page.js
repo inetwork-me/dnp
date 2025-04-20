@@ -6,7 +6,6 @@ import BestProgramForYou from "@/components/bestProgramForYou/BestProgramForYou"
 import ProductsSection from "@/components/productsSection/ProductsSection";
 import BundlesSection from "@/components/bundlesSection/BundlesSection";
 import ShopByBrands from "@/components/ShopByBrands.js/ShopByBrands";
-import Footer from "@/components/footer/Footer";
 
 export default function Page() {
 	const t = useTranslations("app");
@@ -48,8 +47,6 @@ export default function Page() {
 					"Discover brands works with dnp and selling together"
 				)}
 			/>
-
-			<Footer />
 		</main>
 	);
 }

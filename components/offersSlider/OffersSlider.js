@@ -10,15 +10,13 @@ import Link from "next/link";
 import "swiper/css";
 import "swiper/css/navigation";
 
-import styles from "./OffersSlider.module.css";
-
 // icons
 import ClockIcon from "@/public/icons/offers/clock.svg";
 import FlashSaleIcon from "@/public/icons/offers/flashSale.svg";
 import FairIcon from "@/public/icons/offers/fair.svg";
 import CoinsIcon from "@/public/icons/offers/coins.svg";
-import ArrowRight from "@/public/icons/offers/arrowRight.svg";
-import ArrowLeft from "@/public/icons/offers/arrowLeft.svg";
+
+import CustomNavigation from "../customNavigation/CustomNavigation";
 
 const offersList = [
 	{
@@ -103,17 +101,7 @@ const OffersSlider = () => {
 	return (
 		<div className=' relative bg-white h-[184px] py-7 px-5 rounded-xl  shadow-[0px_2px_6px_rgba(20,20,43,0.06)]'>
 			{/* Custom navigation arrows */}
-
-			<button
-				ref={nextRef}
-				className={`${styles.customNextArrow} absolute right-12 top-1/2 transform -translate-y-1/2 z-10 cursor-pointer`}>
-				<ArrowRight />
-			</button>
-			<button
-				ref={prevRef}
-				className={`${styles.customPrevArrow} absolute left-12 top-1/2 transform -translate-y-1/2 z-10 cursor-pointer`}>
-				<ArrowLeft />
-			</button>
+			<CustomNavigation prevRef={prevRef} nextRef={nextRef} />
 
 			<Swiper
 				className='w-[1040px]!'

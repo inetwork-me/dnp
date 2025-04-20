@@ -10,6 +10,7 @@ import Header from "@/components/Header";
 
 // global css styles
 import "@/styles/globals.css";
+import Footer from "@/components/footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] }); // english font
 const cairo = Cairo({ subsets: ["arabic"] }); // arabic font
@@ -38,6 +39,7 @@ export default async function RootLayout({ children, params }) {
 					<ThemeProvider attribute='class' defaultTheme='system' enableSystem>
 						<Header />
 						{children}
+						<Footer />
 					</ThemeProvider>
 				</NextIntlClientProvider>
 			</body>

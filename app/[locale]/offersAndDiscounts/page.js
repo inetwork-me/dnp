@@ -1,14 +1,14 @@
-import BreadCrumb from "@/components/BreadCrumb";
-import ProductDetails from "@/components/productDetails/ProductDetails";
+"use client";
 
 import { useTranslations } from "next-intl";
+import BreadCrumb from "@/components/BreadCrumb";
 
 export default function page() {
 	const t = useTranslations("app");
+
 	return (
-		<section>
+		<section className='bg-[#F9FAFB] '>
 			<BreadCrumb currentPage={t("navigation.offersAndDiscounts")} />
-			<ProductDetails />
 		</section>
 	);
 }
