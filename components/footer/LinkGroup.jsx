@@ -9,7 +9,7 @@ const LinkGroup = ({ headLine, links, t }) => {
 				{links.map(({ id, title, href }) => {
 					return (
 						<li key={id}>
-							{headLine === "Contacts Us" ? (
+							{headLine === "Contacts Us" || headLine === "تواصل معنا" ? (
 								<a
 									href={`tel:${href}`}
 									className='text-[16px] font-normal  text-[#FFFFFF] transition-all duration-200 hover:text-[#ffffffcc]'>

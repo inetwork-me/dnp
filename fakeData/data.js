@@ -1,5 +1,4 @@
 // image and icons
-import ShopByBrands from "@/components/ShopByBrands.js/ShopByBrands";
 import ProductImg1 from "@/public/images/bestSellingProducts/image1.png";
 import ProductImg2 from "@/public/images/bestSellingProducts/image2.png";
 import ProductImg3 from "@/public/images/bestSellingProducts/image3.png";

@@ -24,6 +24,7 @@ body {
 }
 
 .btn-bg {
+	color: #ffffff;
 	background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
 		linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #b26bca;
 }
@@ -31,6 +32,17 @@ body {
 .btn-bg:hover {
 	background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
 		linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #7c3c8f;
+}
+
+.btn-outline-bg {
+	color: #b26bca;
+	background: transparent;
+	border: 1px solid #b26bca;
+}
+.btn-outline-bg:hover {
+	color: #7c3c8f;
+	background: transparent;
+	border: 1px solid #7c3c8f;
 }
 
 .filter-drop-shadow {
