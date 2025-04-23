@@ -5,7 +5,7 @@ import OverLay from "./OverLay";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 
-const BreadCrumb = ({ currentPage }) => {
+const BreadCrumb = ({ currentPage, parentPage, nestedPageTitle }) => {
 	const t = useTranslations("app");
 	return (
 		<>
@@ -22,14 +22,28 @@ const BreadCrumb = ({ currentPage }) => {
 
 				<div className='w-1/2 absolute rtl:left-auto right-28 left-28 top-1/6 z-20'>
 					<h3 className='text-[40px] font-semibold leading-[51px] text-white mb-6'>
-						Product Page
+						{currentPage}
 					</h3>
 
-					<div className='w-full flex items-start gap-4  p-0'>
+					<div className='w-full flex items-start  gap-4  p-0'>
 						<Link href='/' className='text-sm font-normal  text-[#F3F4F6]'>
 							{t("navigation.home")}
 						</Link>
-						<span className='text-sm font-medium leading-6 text-white'>/ </span>
+
+						{parentPage && (
+							<>
+								<span className='text-sm font-medium leading-6 text-white'>
+									/
+								</span>
+								<Link
+									href={`/${parentPage}`}
+									className='text-sm font-medium leading-6 text-[#F3F4F6]'>
+									{nestedPageTitle}
+								</Link>
+							</>
+						)}
+
+						<span className='text-sm font-medium leading-6 text-white'>/</span>
 						<Link href='/' className='text-sm font-medium leading-6 text-white'>
 							{currentPage}
 						</Link>

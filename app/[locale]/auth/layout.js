@@ -1,6 +1,4 @@
-import React from "react";
-
-const page = ({ children }) => {
+const Page = ({ children }) => {
 	return (
 		<div className='w-full py-20 p-6 bg-[#F9FAFB] '>
 			<div className=' flex flex-col items-center gap-12 p-0'>
@@ -12,4 +10,4 @@ const page = ({ children }) => {
 	);
 };
 
-export default page;
+export default Page;

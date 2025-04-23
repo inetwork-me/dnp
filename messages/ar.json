@@ -3,7 +3,7 @@
 		"en": "الانجليزية",
 		"ar": "العربية",
 		"home": "الرئيسية",
-		"myAccount": "حسابي",
+		"My Account": "حسابي",
 		"trackYourOrder": "تتبع طلبك",
 		"search": "البحث...",
 		"addToCart": "أضف إلى السلة",
@@ -130,6 +130,22 @@
 		"Password must be at least 8 characters": " يجب أن تتكون كلمة المرور من 8 أحرف على الأقل",
 		"Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character": " يجب أن تحتوي كلمة المرور على حرف كبير واحد على الأقل وحرف صغير واحد ورقم واحد ورمز خاص واحد",
 		"Loading": "جاري التحميل...",
-		"OTP must be 6 digits": " يجب أن يتكون رمز التحقق من 6 أرقام"
+		"OTP must be 6 digits": " يجب أن يتكون رمز التحقق من 6 أرقام",
+
+		"My Orders": "طلباتي",
+		"My Reviews": "تقييماتي",
+		"Subscriptions": "الإشتراكات",
+
+		"myProfile": {
+			"profile": " الملف الشخصي",
+			"editProfile": "تعديل الملف الشخصي",
+			"ContactInformation": "معلومات الاتصال",
+			"ShippingInformation": "معلومات الشحن",
+			"PaymentInformation": "معلومات الدفع",
+			"PhoneNumber": "رقم الهاتف",
+			"AddressLine": "العنوان",
+			"PostaCode": "الرمز البريدي",
+			"SavedCard": "البطاقة المحفوظة"
+		}
 	}
 }

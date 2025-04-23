@@ -2,7 +2,7 @@
 	"app": {
 		"en": "English",
 		"ar": "Arabic",
-		"myAccount": "My account",
+		"My Account": "My account",
 		"trackYourOrder": "Track your order",
 		"search": "Search...",
 		"addToCart": "Add to cart",
@@ -130,6 +130,22 @@
 		"Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character": "Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character",
 
 		"Loading": "Loading...",
-		"OTP must be 6 digits": "OTP must be 6 digits"
+		"OTP must be 6 digits": "OTP must be 6 digits",
+
+		"My Orders": "My Orders",
+		"My Reviews": "My Reviews",
+		"Subscriptions": "Subscriptions",
+
+		"myProfile": {
+			"profile": "Profile",
+			"editProfile": "Edit",
+			"ContactInformation": "Contact information",
+			"ShippingInformation": "Shipping information",
+			"PaymentInformation": "Payment information",
+			"PhoneNumber": "Phone number",
+			"AddressLine": "Address line",
+			"PostalCode": "Postal code",
+			"SavedCard": "Saved Card"
+		}
 	}
 }

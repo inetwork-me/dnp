@@ -183,7 +183,7 @@ export const navSocialLinks = [
 export const footerLinks = [
 	{
 		id: 1,
-		headLine: "myAccount",
+		headLine: "My Account",
 		links: [
 			{
 				id: 1,
