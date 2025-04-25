@@ -1,11 +1,11 @@
 import { useTranslations } from "next-intl";
 
 // components
-import Hero from "@/components/hero/Hero";
-import BestProgramForYou from "@/components/bestProgramForYou/BestProgramForYou";
-import ProductsSection from "@/components/productsSection/ProductsSection";
-import BundlesSection from "@/components/bundlesSection/BundlesSection";
-import ShopByBrands from "@/components/ShopByBrands.js/ShopByBrands";
+import Hero from "@/app/_components/hero/Hero";
+import BestProgramForYou from "@/app/_components/bestProgramForYou/BestProgramForYou";
+import ProductsSection from "@/app/_components/productsSection/ProductsSection";
+import BundlesSection from "@/app/_components/bundlesSection/BundlesSection";
+import ShopByBrands from "@/app/_components/ShopByBrands.js/ShopByBrands";
 
 export default function Page() {
 	const t = useTranslations("app");

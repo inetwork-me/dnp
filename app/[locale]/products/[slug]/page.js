@@ -1,11 +1,11 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import BreadCrumb from "@/components/BreadCrumb";
-import ProductDescription from "@/components/productDetails/ProductDescription";
-import ProductDetails from "@/components/productDetails/ProductDetails";
-import WriteReview from "@/components/productDetails/writeReview/WriteReview";
-import ProductsSection from "@/components/productsSection/ProductsSection";
+import BreadCrumb from "@/app/_components/BreadCrumb";
+import ProductDescription from "@/app/_components/productDetails/ProductDescription";
+import ProductDetails from "@/app/_components/productDetails/ProductDetails";
+import WriteReview from "@/app/_components/productDetails/writeReview/WriteReview";
+import ProductsSection from "@/app/_components/productsSection/ProductsSection";
 
 export default function page() {
 	const t = useTranslations("app");

@@ -136,15 +136,15 @@
 		"My Reviews": "تقييماتي",
 		"Subscriptions": "الإشتراكات",
 
+		"profile": " الملف الشخصي",
 		"myProfile": {
-			"profile": " الملف الشخصي",
 			"editProfile": "تعديل الملف الشخصي",
 			"ContactInformation": "معلومات الاتصال",
 			"ShippingInformation": "معلومات الشحن",
 			"PaymentInformation": "معلومات الدفع",
 			"PhoneNumber": "رقم الهاتف",
 			"AddressLine": "العنوان",
-			"PostaCode": "الرمز البريدي",
+			"PostalCode": "الرمز البريدي",
 			"SavedCard": "البطاقة المحفوظة"
 		}
 	}

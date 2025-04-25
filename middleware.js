@@ -1,37 +1,25 @@
 import { NextResponse } from "next/server";
-import createMiddleware from "next-intl/middleware";
-import { routing } from "./i18n/routing";
+import { intlMiddleware, handleLocale } from "./middleware/intl-middleware";
+import { handleAuth } from "./middleware/auth-middleware";
 
-const intlMiddleware = createMiddleware({
-	locales: routing.locales,
-	defaultLocale: routing.defaultLocale,
-	localePrefix: "as-needed",
-});
-
-export function middleware(request) {
+export async function middleware(request) {
+	// First, handle the internationalization
 	const response = intlMiddleware(request);
-	const { pathname } = request.nextUrl;
-	const currentLocale = pathname.split("/")[1];
 
-	// Set locale cookie if valid
-	if (routing.locales.includes(currentLocale)) {
-		response.cookies.set("NEXT_LOCALE", currentLocale, {
-			maxAge: 60 * 60 * 24 * 365,
-			path: "/",
-		});
-	}
+	// Get locale information
+	const { currentLocale, pathWithoutLocale } = handleLocale(request, response);
 
-	const pathWithoutLocale = routing.locales.includes(currentLocale)
-		? pathname.replace(`/${currentLocale}`, "") || "/"
-		: pathname;
+	// Handle authentication
+	const authRedirect = await handleAuth(
+		request,
+		response,
+		currentLocale,
+		pathWithoutLocale
+	);
 
-	if (
-		!request.cookies.get("__next_hmr_refresh_hash__") &&
-		pathWithoutLocale.startsWith("/myAccount/profile")
-	) {
-		return NextResponse.redirect(
-			new URL(`/${currentLocale}/auth/signin`, request.url)
-		);
+	// Return auth redirect if one was generated
+	if (authRedirect) {
+		return authRedirect;
 	}
 
 	return response;

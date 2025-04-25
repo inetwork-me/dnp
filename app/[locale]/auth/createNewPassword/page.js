@@ -3,8 +3,8 @@
 import { useTranslations } from "next-intl";
 
 // components
-import Headline from "@/components/Headline";
-import CreateNewPasswordForm from "@/components/authComponents/CreateNewPasswordForm";
+import Headline from "@/app/_components/Headline";
+import CreateNewPasswordForm from "@/app/_components/authComponents/CreateNewPasswordForm";
 
 export default function page() {
 	const t = useTranslations("app");

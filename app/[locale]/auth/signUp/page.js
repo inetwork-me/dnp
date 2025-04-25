@@ -3,10 +3,10 @@
 import { useTranslations } from "next-intl";
 
 // components
-import SocialLoginButtons from "@/components/authComponents/SocialLoginButtons";
-import Headline from "@/components/Headline";
-import SignUpForm from "@/components/authComponents/SignUpForm";
-import NavigateLinkBtn from "@/components/authComponents/NavigateLinkBtn";
+import SocialLoginButtons from "@/app/_components/authComponents/SocialLoginButtons";
+import Headline from "@/app/_components/Headline";
+import SignUpForm from "@/app/_components/authComponents/SignUpForm";
+import NavigateLinkBtn from "@/app/_components/authComponents/NavigateLinkBtn";
 
 export default function page() {
 	const t = useTranslations("app");

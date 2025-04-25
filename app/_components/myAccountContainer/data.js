@@ -138,7 +138,7 @@ export const profileData = [
 	},
 	{
 		id: 6,
-		href: "/logout",
+		href: "/",
 		icon: (
 			<svg
 				width='16'

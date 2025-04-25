@@ -3,11 +3,11 @@
 import { useRouter } from "next/navigation";
 
 import { useTranslations } from "next-intl";
-import Headline from "@/components/Headline";
+import Headline from "@/app/_components/Headline";
 
-import ActionButton from "@/components/authComponents/ActionButton";
-import SocialLoginButtons from "@/components/authComponents/SocialLoginButtons";
-import LoginForm from "@/components/authComponents/LoginForm";
+import ActionButton from "@/app/_components/authComponents/ActionButton";
+import SocialLoginButtons from "@/app/_components/authComponents/SocialLoginButtons";
+import LoginForm from "@/app/_components/authComponents/LoginForm";
 
 export default function page() {
 	const t = useTranslations("app");

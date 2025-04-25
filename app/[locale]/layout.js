@@ -6,11 +6,14 @@ import { ThemeProvider } from "next-themes";
 import { Inter, Cairo } from "next/font/google";
 
 // components
-import Header from "@/components/Header";
+import Header from "@/app/_components/Header";
+import Footer from "@/app/_components/footer/Footer";
+
+// providers to handle authentication and session management with NextAuth.js
+import NextAuthProvider from "../_components/providers/NextAuthProvider";
 
 // global css styles
 import "@/styles/globals.css";
-import Footer from "@/components/footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] }); // english font
 const cairo = Cairo({ subsets: ["arabic"] }); // arabic font
@@ -35,12 +38,14 @@ export default async function RootLayout({ children, params }) {
 			dir={isRTL ? "rtl" : "ltr"}
 			suppressHydrationWarning={true}>
 			<body className={`${fontClass} bg-[#F9FAFB] ${isRTL ? "rtl" : "ltr"}`}>
-				<NextIntlClientProvider>
-					<ThemeProvider attribute='class' defaultTheme='system' enableSystem>
-						<Header />
-						{children}
-						<Footer />
-					</ThemeProvider>
+				<NextIntlClientProvider locale={locale}>
+					<NextAuthProvider>
+						<ThemeProvider attribute='class' defaultTheme='system' enableSystem>
+							<Header />
+							{children}
+							<Footer />
+						</ThemeProvider>
+					</NextAuthProvider>
 				</NextIntlClientProvider>
 			</body>
 		</html>

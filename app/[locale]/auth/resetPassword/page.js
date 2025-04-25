@@ -3,8 +3,8 @@
 import { useTranslations } from "next-intl";
 
 // components
-import Headline from "@/components/Headline";
-import RecoverAccountForm from "@/components/authComponents/RecoverAccountForm";
+import Headline from "@/app/_components/Headline";
+import RecoverAccountForm from "@/app/_components/authComponents/RecoverAccountForm";
 
 export default function page() {
 	const t = useTranslations("app");

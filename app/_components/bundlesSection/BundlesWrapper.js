@@ -1,6 +1,6 @@
 import React from "react";
 import BundlesCard from "./BundlesCard";
-import { bundleList } from "../../fakeData/data";
+import { bundleList } from "@/fakeData/data";
 
 const BundlesWrapper = ({ t }) => {
 	return (

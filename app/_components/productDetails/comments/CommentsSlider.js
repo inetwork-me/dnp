@@ -4,7 +4,6 @@ import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 
-import CustomNavigation from "@/components/customNavigation/CustomNavigation";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -13,6 +12,7 @@ import RatingStars from "../StarRating";
 import { commentsList } from "@/fakeData/data";
 
 import SlideContentBox from "./SlideContentBox";
+import CustomNavigation from "../../customNavigation/CustomNavigation";
 
 const CommentsSlider = ({ t }) => {
 	const swiperRef = useRef(null);

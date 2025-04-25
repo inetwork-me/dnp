@@ -1,7 +1,7 @@
 import ProductCard from "./ProductCard";
 
 // fake data
-import { productsList } from "../../fakeData/data";
+import { productsList } from "@/fakeData/data";
 
 const ProductsCardsWrapper = ({ discount }) => {
 	return (

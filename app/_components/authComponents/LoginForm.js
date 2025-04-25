@@ -1,5 +1,6 @@
 "use client";
-
+import { useState } from "react";
+import { signIn } from "next-auth/react";
 import { useFormik } from "formik";
 
 import { useRouter } from "next/navigation";
@@ -10,8 +11,6 @@ import NavigateLinkBtn from "./NavigateLinkBtn";
 import ErrorField from "./ErrorField";
 import PasswordField from "./PasswordField";
 import ActionButton from "./ActionButton";
-import { signIn } from "@/lib/auth";
-import { useState } from "react";
 
 // INPUTS CLASS
 const inputClassName =
@@ -19,69 +18,31 @@ const inputClassName =
 
 const LoginForm = ({ t }) => {
 	const router = useRouter();
-	const [fakeLoginStatus, setFakeLoginStatus] = useState(null);
 
 	const handleNavigateTo = (href) => {
 		router.push(href);
 	};
 
-	// Fake login handler to be passed to the LoginForm
-	const handleFakeLogin = (credentials) => {
-		// Simulate API delay
-		setFakeLoginStatus("loading");
-
-		setTimeout(() => {
-			// Fake credentials check
-			if (
-				credentials.email === "test@example.com" &&
-				credentials.password === "Password@123"
-			) {
-				setFakeLoginStatus("success");
-				// Simulate successful login and redirect
-				setTimeout(() => router.push("/"), 1000);
-			} else {
-				setFakeLoginStatus("error");
-			}
-		}, 1500);
-
-		return fakeLoginStatus;
-	};
-
 	// The formik hook
 	const formik = useFormik({
 		initialValues: {
-			email: "",
-			password: "",
+			email: "test@example.com",
+			password: "Password@123",
 		},
 		validationSchema: signinSchema,
 		validateOnChange: true,
 		validateOnBlur: true,
-		onSubmit: async (values, { setSubmitting, setStatus }) => {
-			// Use the fake login handler instead of the real signIn function
-			if (handleFakeLogin) {
-				const status = handleFakeLogin(values);
-				if (status === "error") {
-					setStatus(t("Invalid email or password"));
-				}
+		onSubmit: async (values, { setStatus }) => {
+			const res = await signIn("credentials", {
+				redirect: false,
+				email: values.email,
+				password: values.password,
+			});
+			if (res?.error) {
+				setStatus(t("Invalid email or password"));
 			} else {
-				// Original code for real authentication
-				try {
-					const res = await signIn("credentials", {
-						redirect: false,
-						email: values.email,
-						password: values.password,
-					});
-
-					if (res.error) {
-						setStatus(res.error);
-					} else {
-						router.push("/");
-					}
-				} catch (error) {
-					setStatus(t("Authentication failed"));
-				}
+				handleNavigateTo("/");
 			}
-			setSubmitting(false);
 		},
 	});
 

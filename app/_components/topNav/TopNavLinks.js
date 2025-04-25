@@ -11,18 +11,8 @@ import UserIcon from "@/public/icons/UserIcon.svg";
 import ThemeToggle from "../ThemeToggle";
 import { getServerSession } from "next-auth";
 
-const TopNavLinks = () => {
+const TopNavLinks = async () => {
 	const t = useTranslations("app");
-
-	// const session = await getServerSession();
-	const session = {
-		user: {
-			name: "John Doe",
-			email: "john.doe@example.com",
-			image: "https://example.com/avatar.jpg",
-		},
-	};
-	// const session = await getServerSession();
 
 	return (
 		<div className='flex items-center gap-4'>
@@ -34,7 +24,7 @@ const TopNavLinks = () => {
 			</NavLink>
 			<LanguageSelector />
 			<CurrencySelector />
-			<NavLink navigate={!session ? "/auth/signin" : "/myAccount/profile"}>
+			<NavLink navigate={"/myAccount/profile"}>
 				<UserIcon />
 				<span className='text-sm font-medium text-gray-600 '>
 					{t("My Account")}

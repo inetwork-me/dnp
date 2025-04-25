@@ -4,12 +4,13 @@ import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
 
 // components
-import BreadCrumb from "@/components/BreadCrumb";
-import Sidebar from "@/components/myAccountContainer/sidebar/Sidebar";
-import MyAccountContainer from "@/components/myAccountContainer/MyAccountContainer";
+
+import BreadCrumb from "@/app/_components/BreadCrumb";
+import Sidebar from "@/app/_components/myAccountContainer/sidebar/Sidebar";
+import MyAccountContainer from "@/app/_components/myAccountContainer/MyAccountContainer";
 
 // profile data
-import { profileData } from "@/components/myAccountContainer/data";
+import { profileData } from "@/app/_components/myAccountContainer/data";
 
 const Page = ({ children }) => {
 	const t = useTranslations("app");
@@ -20,7 +21,7 @@ const Page = ({ children }) => {
 	return (
 		<section className='bg-[#F9FAFB]'>
 			<BreadCrumb
-				currentPage={t(`myProfile.${currentPage}`)}
+				currentPage={t(currentPage)}
 				nestedPageTitle={t("My Account")}
 				parentPage={"myAccount"}
 			/>

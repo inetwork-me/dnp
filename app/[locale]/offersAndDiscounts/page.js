@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import BreadCrumb from "@/components/BreadCrumb";
+import BreadCrumb from "@/app/_components/BreadCrumb";
 
 export default function page() {
 	const t = useTranslations("app");
