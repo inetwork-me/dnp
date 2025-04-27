@@ -27,7 +27,7 @@ export const profileData = [
 	},
 	{
 		id: 2,
-		href: "/myOrders",
+		href: "/myAccount/myOrders",
 		icon: (
 			<svg
 				width='16'
@@ -59,27 +59,7 @@ export const profileData = [
 	},
 	{
 		id: 3,
-		href: "/myReviews",
-		icon: (
-			<svg
-				width='16'
-				height='16'
-				viewBox='0 0 16 16'
-				fill='none'
-				xmlns='http://www.w3.org/2000/svg'>
-				<path
-					d='M12.6668 9.33333C13.6602 8.36 14.6668 7.19333 14.6668 5.66667C14.6668 4.69421 14.2805 3.76158 13.5929 3.07394C12.9053 2.38631 11.9726 2 11.0002 2C9.82683 2 9.00016 2.33333 8.00016 3.33333C7.00016 2.33333 6.1735 2 5.00016 2C4.0277 2 3.09507 2.38631 2.40744 3.07394C1.7198 3.76158 1.3335 4.69421 1.3335 5.66667C1.3335 7.2 2.3335 8.36667 3.3335 9.33333L8.00016 14L12.6668 9.33333Z'
-					stroke='currentColor'
-					strokelinecapp='round'
-					strokeLinejoin='round'
-				/>
-			</svg>
-		),
-		title: "My Reviews",
-	},
-	{
-		id: 4,
-		href: "/wishlist",
+		href: "/myAccount/wishlist",
 		icon: (
 			<svg
 				width='16'
@@ -98,8 +78,29 @@ export const profileData = [
 		title: "Wishlist",
 	},
 	{
+		id: 4,
+		href: "/myAccount/myReviews",
+		icon: (
+			<svg
+				width='16'
+				height='16'
+				viewBox='0 0 16 16'
+				fill='none'
+				xmlns='http://www.w3.org/2000/svg'>
+				<path
+					d='M12.6668 9.33333C13.6602 8.36 14.6668 7.19333 14.6668 5.66667C14.6668 4.69421 14.2805 3.76158 13.5929 3.07394C12.9053 2.38631 11.9726 2 11.0002 2C9.82683 2 9.00016 2.33333 8.00016 3.33333C7.00016 2.33333 6.1735 2 5.00016 2C4.0277 2 3.09507 2.38631 2.40744 3.07394C1.7198 3.76158 1.3335 4.69421 1.3335 5.66667C1.3335 7.2 2.3335 8.36667 3.3335 9.33333L8.00016 14L12.6668 9.33333Z'
+					stroke='currentColor'
+					strokelinecapp='round'
+					strokeLinejoin='round'
+				/>
+			</svg>
+		),
+		title: "My Reviews",
+	},
+
+	{
 		id: 5,
-		href: "/subscriptions",
+		href: "/myAccount/subscriptions",
 		icon: (
 			<svg
 				width='16'

@@ -1,16 +1,14 @@
-/* Inter google font */
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 @import "tailwindcss";
+
+html {
+	scroll-behavior: smooth;
+}
 
 :root {
 	--foreground-rgb: #444444;
 	--background-rgb: #444444;
-}
-
-html {
-	scroll-behavior: smooth;
-	font-family: "Poppins", sans-serif;
 }
 
 .dark {
@@ -54,4 +52,38 @@ body {
 	height: 100%;
 	overflow: hidden;
 	position: relative;
+}
+
+.loader {
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	position: relative;
+}
+.loader::after,
+.loader::before {
+	content: "";
+	box-sizing: border-box;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 2px solid #ddd;
+	position: absolute;
+	left: 0;
+	top: 0;
+	animation: animloader 2s linear infinite;
+}
+.loader::after {
+	animation-delay: 1s;
+}
+
+@keyframes animloader {
+	0% {
+		transform: scale(0);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 0;
+	}
 }

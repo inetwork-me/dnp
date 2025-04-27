@@ -1,6 +1,6 @@
-import ContactInformation from "./ContactInformation";
-import ShippingInformation from "./ShippingInformation";
-import PaymentInformation from "./PaymentInformation";
+import ContactInformation from "./contactInformation/ContactInformation";
+import ShippingInformation from "./shippingInformation/ShippingInformation";
+import PaymentInformation from "./paymentInformation/PaymentInformation";
 
 const ContentBox = () => {
 	return (

@@ -17,7 +17,7 @@ export async function middleware(request) {
 		pathWithoutLocale
 	);
 
-	// Return auth redirect if one was generated
+	// If there's a redirect from auth middleware, return it
 	if (authRedirect) {
 		return authRedirect;
 	}

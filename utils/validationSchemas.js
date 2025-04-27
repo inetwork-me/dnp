@@ -53,3 +53,25 @@ export const createNewPasswordSchema = Yup.object({
 		.oneOf([Yup.ref("password"), null], "Passwords must match")
 		.required(" Required"),
 });
+
+// edit Profile Schema
+export const editProfileSchema = Yup.object({
+	email: Yup.string().email("Invalid email address").required("Required"),
+	firstName: Yup.string().required("Required"),
+	lastName: Yup.string().required("Required"),
+	phoneNumber: Yup.string().required("Required"),
+	addressLine: Yup.string().required("Required"),
+	country: Yup.string().required("Required"),
+	city: Yup.string().required("Required"),
+	state: Yup.string().required("Required"),
+	postalCode: Yup.string().required("Required"),
+	cardNumber: Yup.string().required("Required"),
+	cardHolderName: Yup.string().required("Required"),
+	cardExpirationDate: Yup.string().required("Required"),
+	cardSecurityCode: Yup.string().required("Required"),
+});
+
+// track your order schema
+export const trackYourOrderSchema = Yup.object({
+	orderID: Yup.string().required("Required"),
+});

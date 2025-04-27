@@ -1,33 +1,28 @@
 "use client";
-
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
-import Link from "next/link";
-
 // icons
 import CurrencyIcon from "@/public/icons/Currency.svg";
+import { useCurrency } from "@/contexts/CurrencyContext";
 
 const CurrencySelector = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	const pathname = usePathname();
 
 	// Define available currencies
-	const currencies = ["USD", "EUR", "AED"]; // Add more as needed
+	const currencies = ["USD", "EGP"]; // Add more as needed
 
-	// Get current currency from localStorage or default to USD
-	const [currentCurrency, setCurrentCurrency] = useState("USD");
-
-	// Load the saved currency preference on component mount
-	useEffect(() => {
-		const savedCurrency = localStorage.getItem("currency") || "USD";
-		setCurrentCurrency(savedCurrency);
-	}, []);
+	// Get current currency from context
+	const {
+		currency: userCurrency,
+		convertAmount,
+		changeCurrency,
+	} = useCurrency();
 
 	// Currency display names/symbols if needed
 	const currencySymbols = {
-		USD: "USD",
-		EUR: "EUR",
-		AED: "د.إ",
+		USD: "$",
+		EGP: "£",
 	};
 
 	// Handle open and close dropdown
@@ -37,8 +32,7 @@ const CurrencySelector = () => {
 
 	// Handle currency change
 	const handleCurrencyChange = (currency) => {
-		localStorage.setItem("currency", currency);
-		setCurrentCurrency(currency);
+		changeCurrency(currency);
 		setIsOpen(false);
 	};
 
@@ -48,7 +42,6 @@ const CurrencySelector = () => {
 				setIsOpen(false);
 			}
 		};
-
 		document.addEventListener("click", handleOutsideClick);
 		return () => document.removeEventListener("click", handleOutsideClick);
 	}, []);
@@ -56,21 +49,20 @@ const CurrencySelector = () => {
 	return (
 		<div className='relative dropdown' onClick={(e) => e.stopPropagation()}>
 			<button
-				className='flex items-center gap-2 pr-2 rtl:pr-0 rtl:pl-2  rtl:border-l rtl:border-0 border-r border-gray-200 cursor-pointer'
+				className='flex items-center gap-2 pr-2 rtl:pr-0 rtl:pl-2 rtl:border-l rtl:border-0 border-r border-gray-200 cursor-pointer'
 				onClick={handleDropdownToggle}>
 				<CurrencyIcon />
 				<span className='text-sm text-gray-600'>
-					{currencySymbols[currentCurrency] || currentCurrency}
+					{currencySymbols[userCurrency]}
 				</span>
 			</button>
-
 			{isOpen && (
 				<div className='absolute right-0 mt-2 w-32 bg-white shadow-lg rounded-md overflow-hidden z-10'>
 					{currencies.map((currency) => (
 						<div
 							key={currency}
 							className={`flex items-center gap-1 px-2 py-2 text-sm hover:bg-gray-100 cursor-pointer ${
-								currency === currentCurrency ? "font-bold" : ""
+								currency === userCurrency ? "font-bold" : ""
 							}`}
 							onClick={() => handleCurrencyChange(currency)}>
 							<CurrencyIcon />

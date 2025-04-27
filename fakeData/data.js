@@ -459,3 +459,96 @@ export const commentsList = [
 		},
 	},
 ];
+
+export const ordersList = [
+	{
+		id: 1,
+		orderNumber: "#1254567",
+		datePlaced: "2023-05-20",
+		totalCost: 1932,
+
+		shipping: {
+			status: "inProgress",
+			date: "2023-05-20",
+		},
+
+		products: [
+			{
+				id: 1,
+				image: ProductImg1,
+				vendor: "Vendor Name",
+				title: "Product name",
+				quantity: 2,
+				price: 817,
+			},
+			{
+				id: 2,
+				image: ProductImg2,
+				vendor: "Vendor Name",
+				title: "Product name",
+				quantity: 2,
+				price: 817,
+			},
+		],
+	},
+	{
+		id: 2,
+		orderNumber: "#1254567",
+		datePlaced: "2023-05-20",
+		totalCost: 1932,
+
+		shipping: {
+			status: "delivered",
+			date: "202-05-20",
+		},
+
+		products: [
+			{
+				id: 1,
+				image: ProductImg1,
+				vendor: "Vendor Name",
+				title: "Product name",
+				quantity: 2,
+				price: 817,
+			},
+			{
+				id: 2,
+				image: ProductImg2,
+				vendor: "Vendor Name",
+				title: "Product name",
+				quantity: 2,
+				price: 817,
+			},
+		],
+	},
+	{
+		id: 3,
+		orderNumber: "#1254567",
+		datePlaced: "2023-05-20",
+		totalCost: 1932,
+
+		shipping: {
+			status: "delivered",
+			date: "2025-05-20",
+		},
+
+		products: [
+			{
+				id: 1,
+				image: ProductImg1,
+				vendor: "Vendor Name",
+				title: "Product name",
+				quantity: 2,
+				price: 817,
+			},
+			{
+				id: 2,
+				image: ProductImg2,
+				vendor: "Vendor Name",
+				title: "Product name",
+				quantity: 2,
+				price: 817,
+			},
+		],
+	},
+];

@@ -1,8 +1,10 @@
 "use client";
-import { useState } from "react";
 
-import { productAccordingList } from "@/fakeData/data";
+import { useState } from "react";
 import ProductAccording from "./ProductAccording";
+
+//
+import { productAccordingList } from "@/fakeData/data";
 
 const ProductDescription = ({ t }) => {
 	const [activeIndex, setActiveIndex] = useState(null);
@@ -15,9 +17,9 @@ const ProductDescription = ({ t }) => {
 		<div className='w-full flex flex-col items-start gap-2 border-y border-y-gray-200 py-12'>
 			<div className='container mx-auto'>
 				<div className='flex flex-col gap-4'>
-					{productAccordingList.map((item, index, id) => (
+					{productAccordingList.map((item, index) => (
 						<ProductAccording
-							key={id}
+							key={item.id}
 							icon={item.icon}
 							question={t(item.question)}
 							answer={item.answer}

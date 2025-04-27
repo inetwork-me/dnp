@@ -1,13 +1,11 @@
 import { useTranslations } from "next-intl";
+import SectionTitle from "../../SectionTitle";
 
 const ShippingInformation = () => {
 	const t = useTranslations("app");
 	return (
 		<div className='w-full flex flex-col items-start gap-6 '>
-			<h4 className=' text-2xl font-semibold text-gray-950'>
-				{t("myProfile.ContactInformation")}
-			</h4>
-
+			<SectionTitle title={t("myProfile.ContactInformation")} />
 			<div className='w-full flex items-start flex-wrap justify-evenly '>
 				<div className='flex-1 flex flex-col justify-center items-start gap-1 p-0'>
 					<h5 className='text-sm font-normal text-gray-500'>

@@ -1,12 +1,7 @@
-import moment from "moment";
+import { formatDate } from "@/utils/formatDate";
 import Image from "next/image";
 
 const SlideContentBox = ({ item }) => {
-	// Format date using moment
-	const formatDate = (dateString) => {
-		return moment(dateString).format("DD MMMM YYYY"); // Format: 03 March 2023
-	};
-
 	return (
 		<>
 			<p className='text-[16px] leading-7 font-normal text-[#374151]'>

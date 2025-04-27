@@ -7,8 +7,8 @@
 		"trackYourOrder": "تتبع طلبك",
 		"search": "البحث...",
 		"addToCart": "أضف إلى السلة",
+		"removeItem": "حذف المنتج",
 		"shopNow": "تسوق الآن",
-
 		"Best program for your fitness": "أفضل برنامج للياقة البدنية الخاصة بك",
 		"Discover our best-selling products loved by many": "اكتشف منتجاتنا الأكثر مبيعاً والتي يحبها الكثيرون!",
 		"Top Selling Bundles": "أفضل الحزم مبيعًا",
@@ -45,6 +45,7 @@
 			"blogs": "مقالات",
 			"devices": "الأجهزة"
 		},
+		"Category": "التصنيف",
 		"categories": {
 			"title": " جميع التصنيفات",
 			"sportsNutrition": "التغذية الرياضية",
@@ -145,7 +146,37 @@
 			"PhoneNumber": "رقم الهاتف",
 			"AddressLine": "العنوان",
 			"PostalCode": "الرمز البريدي",
-			"SavedCard": "البطاقة المحفوظة"
-		}
+			"SavedCard": "البطاقة المحفوظة",
+			"firstName": "الاسم الاول",
+			"lastName": "الاسم الاخير ",
+			"country": "الدولة",
+			"city": "المدينة",
+			"state:": "الولاية"
+		},
+		"Save changes": "حفظ التعديلات",
+		"Credit Card": "بطاقة الائتمان",
+		"Visa, Mastercard, Meezar": "فيزا, ماستر كارد, ميزا",
+		"Card number": "رقم البطاقة",
+		"Name on card": "اسم البطاقة",
+		"Expiry date": "تاريخ الإنتهاء",
+		"CSV": "CSV",
+		"Add new card": "إضافة بطاقة جديدة",
+
+		"orders": {
+			"Enter your Order ID below and click Truck to see your order status": "أدخل رقم طلبك أدناه وانقر فوق \"تتبع\" لمعرفة حالة الطلب الخاص بك.",
+			"orderId": "رقم الطلب",
+			"trackOrder": "تتبع الطلب",
+			"orderNumber": "رقم الطلب",
+			"datePlaced": "تاريخ الطلب",
+			"totalCost": "التكلفة الإجمالية",
+			"expectedDeliveryDate": "تاريخ التوصيل المتوقع:",
+			"buyAgain": "شراء مرة أخرى",
+			"deliveredOn": "تم التوصيل في:"
+		},
+
+		"viewProduct": "عرض المنتج",
+		"deleteReview": "حذف التقييم",
+		"are you sure you want to delete this review": "هل أنت متأكد من أنك تريد حذف هذا التقييم؟",
+		"cancel": "إلغاء"
 	}
 }
