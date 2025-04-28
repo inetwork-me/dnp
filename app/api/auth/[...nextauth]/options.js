@@ -38,13 +38,13 @@ export const authOptions = () => ({
 
 	// Custom pages for authentication flows
 
-	// pages: {
-	// 	signIn: `/${locale}/auth/signin`,
-	// 	signUp: `/${locale}/auth/signup`,
-	// 	sendOtp: `/${locale}/auth/sendOtp`,
-	// 	createNewPassword: `/${locale}/auth/createNewPassword`,
-	// 	resetPassword: `/${locale}/auth/resetPassword`,
-	// },
+	pages: {
+		signIn: `/auth/signin`,
+		signUp: `/auth/signup`,
+		sendOtp: `/auth/sendOtp`,
+		createNewPassword: `/auth/createNewPassword`,
+		resetPassword: `/auth/resetPassword`,
+	},
 
 	// Use JWT for session handling
 	session: {

@@ -1,4 +1,4 @@
-import { maskCardNumber } from "@/utils/maskCardNumber";
+import { maskCardNumber } from "@/app/_utils/maskCardNumber";
 import { useTranslations } from "next-intl";
 import SectionTitle from "../../SectionTitle";
 

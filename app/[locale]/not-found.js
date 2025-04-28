@@ -10,7 +10,7 @@ export default function NotFound() {
 			<p className='text-lg text-gray-600 mb-6'>{t("notFound.message")}</p>
 			<Link
 				href='/'
-				className='elative w-10 h-10 rounded-full flex justify-center items-center p-2 z-10 cursor-pointer bg-[#B26BCA] hover:bg-[#723881] transition-all duration-300 transform hover:-rotate-45 hover:-translate-y-1 hover:translate-x-1'>
+				className='min-w-10 min-h-12 px-6 rounded-full flex justify-center items-center  cursor-pointer bg-[#B26BCA] hover:bg-[#723881] text-white transition-all duration-200 '>
 				{t("notFound.backToHome")}
 			</Link>
 		</div>

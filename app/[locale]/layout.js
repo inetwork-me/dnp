@@ -15,7 +15,11 @@ import NextAuthProvider from "../_components/providers/NextAuthProvider";
 
 // global css styles
 import "@/styles/globals.css";
+
+// error boundary
 import ErrorBoundary from "../_components/ErrorBoundary";
+
+// context providers
 import { CurrencyProvider } from "@/contexts/CurrencyContext";
 
 const inter = Inter({ subsets: ["latin"] }); // english font

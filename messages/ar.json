@@ -136,6 +136,11 @@
 		"My Orders": "طلباتي",
 		"My Reviews": "تقييماتي",
 		"Subscriptions": "الإشتراكات",
+		"cancelSubscription": " إلغاء الاشتراك",
+		"remainingDays": "الأيام المتبقية :",
+		"active": "نشط",
+		"monthlyBilling": "فاتورة شهرية",
+		"billing": "الفاتورة :",
 
 		"profile": " الملف الشخصي",
 		"myProfile": {
@@ -177,6 +182,10 @@
 		"viewProduct": "عرض المنتج",
 		"deleteReview": "حذف التقييم",
 		"are you sure you want to delete this review": "هل أنت متأكد من أنك تريد حذف هذا التقييم؟",
-		"cancel": "إلغاء"
+		"cancel": "إلغاء",
+		"Search results": "نتائج البحث :",
+		"Show only products on sale": " عرض المنتجات المخفضة فقط",
+		"Sort by": "ترتيب حسب :",
+		"Filters": "التصفيات"
 	}
 }

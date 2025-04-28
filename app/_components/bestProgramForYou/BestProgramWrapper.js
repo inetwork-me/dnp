@@ -27,7 +27,7 @@ const BestProgramWrapper = ({ t }) => {
 		},
 	];
 	return (
-		<div className='w-full h-[488px] flex md:flex-row flex-col items-center gap-8 p-0'>
+		<div className='w-full h-[488px] grid grid-cols-3  gap-8 p-0'>
 			{bestProgramList.map((program) => (
 				<BestProgramCard key={program.id} program={program} />
 			))}

@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const BestProgramCard = ({ program }) => {
 	return (
-		<div className='w-[410px] h-[488px] flex flex-col justify-end items-start  rounded-xl overflow-hidden isolate'>
+		<div className='col-span-1 h-[488px] flex flex-col justify-end items-start  rounded-xl overflow-hidden isolate'>
 			<div className='relative w-full h-full group  rounded-xl '>
 				<Image
 					src={program.image}

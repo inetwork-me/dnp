@@ -3,7 +3,7 @@ import { useFormik } from "formik";
 import { useTranslations } from "next-intl";
 
 // utils
-import { trackYourOrderSchema } from "@/utils/validationSchemas";
+import { trackYourOrderSchema } from "@/app/_utils/validationSchemas";
 
 // components
 import SectionTitle from "../SectionTitle";

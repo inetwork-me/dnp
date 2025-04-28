@@ -1,7 +1,7 @@
 "use client";
 
 import { useFormik } from "formik";
-import { editProfileSchema } from "@/utils/validationSchemas";
+import { editProfileSchema } from "@/app/_utils/validationSchemas";
 
 import EditShippingInformation from "../shippingInformation/EditShippingInformation";
 import EditContactInformation from "../contactInformation/EditContactInformation";

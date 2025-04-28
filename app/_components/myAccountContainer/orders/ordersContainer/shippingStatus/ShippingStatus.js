@@ -1,5 +1,5 @@
-import { formatDate } from "@/utils/formatDate";
-import { shippingStatusIcon } from "@/utils/shippingStatusIcon";
+import { formatDate } from "@/app/_utils/formatDate";
+import { shippingStatusIcon } from "@/app/_utils/shippingStatusIcon";
 
 const ShippingStatus = ({ t, shipping }) => {
 	return (

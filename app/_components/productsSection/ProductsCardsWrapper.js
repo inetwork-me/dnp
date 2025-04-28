@@ -5,7 +5,7 @@ import { productsList } from "@/fakeData/data";
 
 const ProductsCardsWrapper = ({ discount }) => {
 	return (
-		<div className='flex flex-wrap gap-8 justify-center items-start'>
+		<div className=' grid grid-cols-4 gap-8 '>
 			{productsList.map((product) => (
 				<ProductCard key={product.id} product={product} discount={discount} />
 			))}

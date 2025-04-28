@@ -6,7 +6,7 @@ const LinksWrapper = () => {
 	const t = useTranslations("app");
 
 	return (
-		<ul className='flex justify-between items-start gap-28 p-0'>
+		<ul className='col-span-5 grid grid-cols-5  p-0'>
 			{footerLinks.map(({ id, headLine, links }) => {
 				return (
 					<LinkGroup key={id} t={t} headLine={t(headLine)} links={links} />

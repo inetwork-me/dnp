@@ -7,7 +7,7 @@ const Hero = () => {
 	return (
 		<section className='w-full py-14  bg-[#F9FAFB] '>
 			<div className='container mx-auto'>
-				<section className='  w-full md:flex-row flex-col  flex items-start justify-end gap-8 py-8'>
+				<section className='w-full grid grid-cols-4 gap-8 py-8'>
 					<Categories />
 					<HeroBox />
 				</section>

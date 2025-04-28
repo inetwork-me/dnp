@@ -3,7 +3,7 @@
 import { useFormik } from "formik";
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
-import { createNewPasswordSchema } from "@/utils/validationSchemas";
+import { createNewPasswordSchema } from "@/app/_utils/validationSchemas";
 
 import PasswordField from "./PasswordField";
 import ActionButton from "./ActionButton";

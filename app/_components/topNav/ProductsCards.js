@@ -6,7 +6,7 @@ import productImg3 from "@/public/images/productImg3.png";
 
 const ProductsCards = () => {
 	return (
-		<section className='w-full flex justify-end gap-8 p-0 pb-8 '>
+		<section className='w-full grid grid-cols-4 gap-8 p-0 pb-8 '>
 			<ImgTextContainer
 				imgSrc={productImg3}
 				imgBoxSize='w-[305px]'

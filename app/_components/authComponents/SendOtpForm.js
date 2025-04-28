@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useFormik } from "formik";
 import { useRouter, useSearchParams } from "next/navigation";
-import { sendOtpSchema } from "@/utils/validationSchemas";
+import { sendOtpSchema } from "@/app/_utils/validationSchemas";
 
 import ErrorField from "./ErrorField";
 import ActionButton from "./ActionButton";

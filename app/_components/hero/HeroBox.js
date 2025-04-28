@@ -9,22 +9,22 @@ import { useTranslations } from "next-intl";
 const HeroBox = () => {
 	const t = useTranslations("app");
 	return (
-		<div className='w-[952px] flex flex-row  justify-end gap-8 p-0 '>
+		<div className='w-full col-span-3 grid grid-cols-3 gap-8 p-0 '>
 			<ImgTextContainer
 				isHero={true}
 				imgSrc={heroImage}
-				imgBoxSize='w-[624px]'
+				className='col-span-2  rounded-xl'
 				containerTextSize='w-[60%]'
 				altText='hero image'
 				buttonText={t("shopNow")}
 				text={"Get in shape today with our premium product."}
 			/>
-			<aside className='w-[296px] flex flex-col gap-8'>
+
+			<aside className=' flex flex-col gap-8'>
 				<ImgTextContainer
 					imgSrc={productImg2}
 					imgBoxSize='w-full'
 					btnHeight='h-[40px]'
-					imgHeight='h-[207px] w-[280px]'
 					altText='product image'
 					buttonText={t("shopNow")}
 					containerTextSize='w-[70%]'
@@ -35,7 +35,6 @@ const HeroBox = () => {
 					imgSrc={productImg1}
 					imgBoxSize='w-full'
 					btnHeight='h-[40px]'
-					imgHeight='h-[207px] w-[280px]'
 					altText='product image'
 					containerTextSize='w-[70%]'
 					buttonText={t("shopNow")}

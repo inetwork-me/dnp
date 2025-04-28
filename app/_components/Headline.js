@@ -1,5 +1,5 @@
 const Headline = ({
-	titleClassName = "text-[40px]  leading-[51px] font-semibold text-[#030712]",
+	titleClassName = "text-[40px] leading-[51px] font-semibold text-[#030712]",
 	HeadlineAlign = "items-start",
 	title,
 	description,

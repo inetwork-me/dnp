@@ -1,5 +1,5 @@
 import Currency from "@/app/_components/Currency";
-import { formatDate } from "@/utils/formatDate";
+import { formatDate } from "@/app/_utils/formatDate";
 import React from "react";
 
 const OrdersHeader = ({ t, order }) => {

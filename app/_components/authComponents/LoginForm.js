@@ -4,7 +4,7 @@ import { signIn } from "next-auth/react";
 import { useFormik } from "formik";
 
 import { useRouter } from "next/navigation";
-import { signinSchema } from "@/utils/validationSchemas";
+import { signinSchema } from "@/app/_utils/validationSchemas";
 import RememberMe from "./RememberMe";
 import NavigateLinkBtn from "./NavigateLinkBtn";
 

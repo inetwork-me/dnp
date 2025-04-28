@@ -3,7 +3,7 @@
 import { useFormik } from "formik";
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
-import { recoverAccountSchema } from "@/utils/validationSchemas";
+import { recoverAccountSchema } from "@/app/_utils/validationSchemas";
 
 import ErrorField from "./ErrorField";
 import ActionButton from "./ActionButton";

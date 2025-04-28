@@ -3,7 +3,7 @@ import OverLay from "../OverLay";
 
 const BundlesCard = ({ item, t }) => {
 	return (
-		<div className='w-[410px] h-full rounded-xl overflow-hidden group'>
+		<div className='col-span-1 h-full rounded-xl overflow-hidden group'>
 			<div className='relative w-full'>
 				<Image
 					src={item.image}

@@ -1,4 +1,4 @@
-import { formatDate } from "@/utils/formatDate";
+import { formatDate } from "@/app/_utils/formatDate";
 import Image from "next/image";
 
 const SlideContentBox = ({ item }) => {

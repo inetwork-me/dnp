@@ -17,7 +17,7 @@ const Categories = () => {
 		{ name: t("categories.healthPackages"), slug: "healthPackages" },
 	];
 	return (
-		<aside className='w-[297px] min-h-[300px] flex flex-col rounded-xl filter-drop-shadow bg-white'>
+		<aside className=' flex flex-col rounded-xl filter-drop-shadow bg-white'>
 			<h3 className='bg-[#723881] text-white py-3 px-4 text-lg font-medium flex items-center gap-2 rounded-tl-xl rounded-tr-xl'>
 				<ListIcon className='' /> {t("categories.title")}
 			</h3>

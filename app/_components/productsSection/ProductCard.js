@@ -35,7 +35,7 @@ const ProductCard = ({ product, discount }) => {
 
 	return (
 		<div
-			className='w-[296px] h-[520px] flex flex-col items-start gap-4 isolate p-0 cursor-pointer group'
+			className='col-span-1 h-[520px] flex flex-col items-start gap-4 isolate p-0 cursor-pointer group'
 			onClick={handleCardClick}>
 			<div className='relative h-[330px] rounded-xl w-full overflow-hidden'>
 				<Image

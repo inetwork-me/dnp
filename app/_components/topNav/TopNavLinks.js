@@ -9,9 +9,8 @@ import CurrencySelector from "../CurrencySelector";
 import TruckIcon from "@/public/icons/TruckIcon.svg";
 import UserIcon from "@/public/icons/UserIcon.svg";
 import ThemeToggle from "../ThemeToggle";
-import { getServerSession } from "next-auth";
 
-const TopNavLinks = async () => {
+const TopNavLinks = () => {
 	const t = useTranslations("app");
 
 	return (

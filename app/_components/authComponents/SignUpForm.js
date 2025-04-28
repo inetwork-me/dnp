@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useFormik } from "formik";
 
 import { useRouter } from "next/navigation";
-import { signupSchema } from "@/utils/validationSchemas";
+import { signupSchema } from "@/app/_utils/validationSchemas";
 
 import ErrorField from "./ErrorField";
 import PasswordField from "./PasswordField";
