@@ -64,7 +64,7 @@ const TrackYourOrderForm = () => {
 							error={formik.errors.orderID}
 						/>
 					</div>
-					<ActionButton btnSize='md:w-auto w-full h-[48px] py-3 px-[40px]'>
+					<ActionButton className='md:w-auto w-full h-[48px] py-3 px-[40px]'>
 						{t("orders.trackOrder")}
 					</ActionButton>
 				</div>

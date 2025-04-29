@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 const FilterMenuHeader = () => {
 	const t = useTranslations("app");
 	return (
-		<div className='flex items-center gap-5 p-4 self-stretch border-b border-gray-200'>
+		<div className='flex items-center gap-5 pb-2 self-stretch border-b border-gray-200'>
 			<div className='flex  items-center justify-center gap-2'>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'

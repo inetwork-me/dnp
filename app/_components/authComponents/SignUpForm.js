@@ -46,7 +46,7 @@ const SignUpForm = ({ t }) => {
 			<div className='w-full'>
 				<input
 					name='fullName'
-					placeholder={t("Full name")}
+					placeholder={t("Full Name")}
 					className={inputClassName}
 					onChange={formik.handleChange}
 					onBlur={formik.handleBlur}

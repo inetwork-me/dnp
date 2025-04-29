@@ -29,8 +29,8 @@ const WishlIstItem = ({ product, t }) => {
 			</div>
 
 			<div className='flex-1 flex flex-col items-center gap-4'>
-				<ActionButton btnSize='w-full h-12'>{t("addToCart")}</ActionButton>
-				<ActionButton btnSize='w-full h-12' outline={true}>
+				<ActionButton className='h-12'>{t("addToCart")}</ActionButton>
+				<ActionButton className='h-12' outline={true}>
 					{t("removeItem")}
 				</ActionButton>
 			</div>

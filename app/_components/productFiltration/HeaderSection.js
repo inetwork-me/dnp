@@ -1,22 +1,23 @@
+"use client";
+
 import { useTranslations } from "next-intl";
-import React from "react";
-import Checkbox from "../Checkbox";
+import { CheckboxWithText } from "@/app/_shared/ui/checkboxWithText";
 
 const HeaderSection = ({ filters, handleFilterChange }) => {
 	const t = useTranslations("app");
 	return (
-		<div className='w-full flex justify-between items-center self-stretch'>
+		<div className='w-full flex justify-between items-center self-stretch pb-8'>
 			<h3 className='text-3xl font-semibold text-gray-950'>
 				{t("Search results")}
 				<span>"Product name"</span>
 			</h3>
 			<div className='flex gap-8 items-center'>
-				<Checkbox
+				<CheckboxWithText
+					className='flex-row-reverse'
 					id='onSale'
 					label={t("Show only products on sale")}
-					checked={filters?.onSale}
-					onChange={() => handleFilterChange("onSale", !filters?.onSale)}
 				/>
+
 				<div className='flex gap-3 items-center'>
 					<p className='text-base font-normal  text-gray-700'>{t("Sort by")}</p>
 					<select

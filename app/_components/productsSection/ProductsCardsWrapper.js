@@ -3,10 +3,14 @@ import ProductCard from "./ProductCard";
 // fake data
 import { productsList } from "@/fakeData/data";
 
-const ProductsCardsWrapper = ({ discount }) => {
+const ProductsCardsWrapper = ({
+	products = productsList,
+	gridCols = "grid-cols-4",
+	discount,
+}) => {
 	return (
-		<div className=' grid grid-cols-4 gap-8 '>
-			{productsList.map((product) => (
+		<div className={`grid ${gridCols} gap-8`}>
+			{products.map((product) => (
 				<ProductCard key={product.id} product={product} discount={discount} />
 			))}
 		</div>

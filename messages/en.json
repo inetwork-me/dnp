@@ -4,7 +4,7 @@
 		"ar": "Arabic",
 		"My Account": "My account",
 		"trackYourOrder": "Track your order",
-		"search": "Search...",
+		"search": "Search",
 		"addToCart": "Add to cart",
 		"removeItem": "Remove item",
 		"shopNow": "Shop Now",
@@ -33,8 +33,12 @@
 
 		"navigation": {
 			"home": "Home",
+			"bundles": "Bundles",
 			"offersAndDiscounts": "Offers & Discounts",
+
 			"doctors": "Doctors",
+			"allDoctors": "All Doctors",
+			"academy": "Academy",
 			"bmiCalculator": "Bmi calculator",
 			"packages": "Packages",
 			"packagesList": "Packages List",
@@ -101,7 +105,7 @@
 		"Please log in to your account to retrieve your data": "Please log in to your account to retrieve your data.",
 		"Please provide your information to create a new account": "Please provide your information to create a new account.",
 		"Email": "Email",
-		"Full name": "Full name",
+		"Full Name": "Full Name",
 		"Password": "Password",
 		"Confirm Password": "Confirm Password",
 		"Reset password": "Reset password",
@@ -187,6 +191,19 @@
 		"Search results": "Search results :",
 		"Show only products on sale": "Show only products on sale",
 		"Sort by": "Sort by :",
-		"Filters": "Filters"
+		"Filters": "Filters",
+		"Apply Filters": "Apply Filters",
+		"to": "To",
+		"Filter by": "Filter by:",
+
+		"Doctor Profile": "Doctor Profile",
+
+		"Department": "Department",
+		"Specializes": "Specializes",
+		"Book Appointment": "Book Appointment",
+		"Detailed Info": "Detailed Info",
+		"Feedback": "Feedback",
+		"We value your expert opinions on the medical profession": "We value your expert opinions on the medical profession.",
+		"Tell us your feedback": "Tell us your feedback!"
 	}
 }

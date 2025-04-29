@@ -45,11 +45,33 @@ import Avatar1 from "@/public/images/Avatar1.png";
 import Avatar2 from "@/public/images/Avatar2.png";
 import Avatar3 from "@/public/images/Avatar3.png";
 
+// doctors images
+import Doctor1 from "@/public/images/doctors/img-1.png";
+import Doctor2 from "@/public/images/doctors/img-2.png";
+import Doctor3 from "@/public/images/doctors/img-3.png";
+import Doctor4 from "@/public/images/doctors/img-4.png";
+import Doctor5 from "@/public/images/doctors/img-5.png";
+import Doctor6 from "@/public/images/doctors/img-6.png";
+import Doctor7 from "@/public/images/doctors/img-7.png";
+import Doctor8 from "@/public/images/doctors/img-8.png";
+
 //  navigation items
 export const navItems = [
 	{ name: "navigation.home", path: "/" },
 	{ name: "navigation.offersAndDiscounts", path: "/offersAndDiscounts" },
-	{ name: "navigation.doctors", path: "/doctors" },
+	{ name: "navigation.bundles", path: "/bundles" },
+
+	{
+		name: "navigation.doctors",
+		subPages: [
+			{ name: "navigation.allDoctors", path: "/doctors" },
+			{
+				name: "navigation.academy",
+				path: "doctors/academy",
+			},
+		],
+	},
+
 	{ name: "navigation.bmiCalculator", path: "/bmiCalculator" },
 	{
 		name: "navigation.packages",
@@ -61,7 +83,6 @@ export const navItems = [
 			},
 			{ name: "navigation.slimmingSessions", path: "/slimmingSessions" },
 		],
-		path: "/packages",
 	},
 	{ name: "navigation.recipes", path: "/recipes" },
 	{ name: "navigation.blogs", path: "/blogs" },
@@ -598,5 +619,68 @@ export const categoriesFilterList = [
 			{ id: 4, title: "Category 4" },
 			{ id: 5, title: "Category 5" },
 		],
+	},
+	{
+		id: 5,
+		title: "price",
+	},
+];
+
+export const doctorsDataList = [
+	{
+		id: 1,
+		name: "Dr. Sarah Johnson",
+		job_title:
+			"Description and Details about doctor career and Success and achievements Description and Details about doctor career and Success and achievements",
+		image: Doctor1,
+	},
+	{
+		id: 2,
+		name: "Dr. Sarah Johnson",
+		job_title:
+			"Description and Details about doctor career and Success and achievements Description and Details about doctor career and Success and achievements",
+		image: Doctor2,
+	},
+	{
+		id: 3,
+		name: "Dr. Sarah Johnson",
+		job_title:
+			"Description and Details about doctor career and Success and achievements Description and Details about doctor career and Success and achievements",
+		image: Doctor3,
+	},
+	{
+		id: 4,
+		name: "Dr. Sarah Johnson",
+		job_title:
+			"Description and Details about doctor career and Success and achievements Description and Details about doctor career and Success and achievements",
+		image: Doctor4,
+	},
+	{
+		id: 5,
+		name: "Dr. Sarah Johnson",
+		job_title:
+			"Description and Details about doctor career and Success and achievements Description and Details about doctor career and Success and achievements",
+		image: Doctor5,
+	},
+	{
+		id: 6,
+		name: "Dr. Sarah Johnson",
+		job_title:
+			"Description and Details about doctor career and Success and achievements Description and Details about doctor career and Success and achievements",
+		image: Doctor6,
+	},
+	{
+		id: 7,
+		name: "Dr. Sarah Johnson",
+		job_title:
+			"Description and Details about doctor career and Success and achievements Description and Details about doctor career and Success and achievements",
+		image: Doctor7,
+	},
+	{
+		id: 8,
+		name: "Dr. Sarah Johnson",
+		job_title:
+			"Description and Details about doctor career and Success and achievements Description and Details about doctor career and Success and achievements",
+		image: Doctor8,
 	},
 ];

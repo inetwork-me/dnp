@@ -75,3 +75,10 @@ export const editProfileSchema = Yup.object({
 export const trackYourOrderSchema = Yup.object({
 	orderID: Yup.string().required("Required"),
 });
+
+// feedback schema
+export const feedbackSchema = Yup.object({
+	fullName: Yup.string().required("Required"),
+	email: Yup.string().email("Invalid email address").required("Required"),
+	message: Yup.string().required("Required"),
+});

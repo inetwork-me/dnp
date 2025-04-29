@@ -1,7 +1,11 @@
-export default function Loading() {
+import ProductsSkelton from "@/app/_components/productsSkelton/ProductsSkelton";
+
+const loading = () => {
 	return (
-		<div className='w-full h-screen flex items-center justify-center'>
-			<span className='loader'></span>
+		<div className='w-full flex items-start content-start flex-wrap gap-8'>
+			<ProductsSkelton />
 		</div>
 	);
-}
+};
+
+export default loading;

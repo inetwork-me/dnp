@@ -34,7 +34,10 @@
 		},
 		"navigation": {
 			"home": "الرئيسية",
+			"bundles": "الحزم",
 			"offersAndDiscounts": "العروض والخصومات",
+			"allDoctors": "جميع الأطباء",
+			"academy": "الأكاديمية",
 			"doctors": "الأطباء",
 			"bmiCalculator": "حاسبة مؤشر كتلة الجسم",
 			"packages": "الباقات",
@@ -99,7 +102,7 @@
 		"Please log in to your account to retrieve your data": " يرجى تسجيل الدخول إلى حسابك لإستيرداد بياناتك.",
 		"Please provide your information to create a new account": "يرجى اضافة بياناتك لإنشاء حساب جديد.",
 		"Email": "البريد الإلكتروني",
-		"Full name": "الاسم الكامل",
+		"Full Name": "الاسم الكامل",
 		"Password": "كلمة المرور",
 		"Confirm Password": "تأكيد كلمة المرور",
 		"Reset password": "إعادة تعيين كلمة المرور",
@@ -186,6 +189,18 @@
 		"Search results": "نتائج البحث :",
 		"Show only products on sale": " عرض المنتجات المخفضة فقط",
 		"Sort by": "ترتيب حسب :",
-		"Filters": "التصفيات"
+		"Filters": "التصفيات",
+		"Apply Filters": "تنفيذ الفرز",
+		"to": "إلى",
+		"Filter by": "تصفية حسب:",
+		"Doctor Profile": "ملف الطبيب",
+
+		"Department": "القسم",
+		"Specializes": "التخصص",
+		"Book Appointment": "احجز موعدا",
+		"Detailed Info": "المعلومات التفصيلية",
+		"Feedback": "التعليقات",
+		"We value your expert opinions on the medical profession": "نحن نؤمن بقيمة الآراء الخبراء على المهنة الطبية.",
+		"Tell us your feedback": "أخبرنا برأيك"
 	}
 }

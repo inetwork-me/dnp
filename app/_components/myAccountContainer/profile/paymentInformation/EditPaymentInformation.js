@@ -90,7 +90,7 @@ const EditPaymentInformation = ({ inputClassName, formik, t }) => {
 			</div>
 
 			<ActionButton
-				btnSize='md:w-auto w-full h-[48px] py-3 px-[40px]'
+				className='md:w-auto w-full h-[48px] py-3 px-[40px]'
 				outline={true}>
 				{t("Add new card")}
 			</ActionButton>
