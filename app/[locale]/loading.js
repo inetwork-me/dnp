@@ -2,7 +2,7 @@ import ProductsSkelton from "@/app/_components/productsSkelton/ProductsSkelton";
 
 const loading = () => {
 	return (
-		<div className='w-full flex items-start content-start flex-wrap gap-8'>
+		<div className='container mx-auto py-14'>
 			<ProductsSkelton />
 		</div>
 	);

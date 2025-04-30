@@ -2,9 +2,20 @@
 
 import * as React from "react";
 import * as SelectPrimitive from "@radix-ui/react-select";
-import { CheckIcon, ChevronDownIcon, ChevronUpIcon } from "lucide-react";
+import {
+	CheckIcon,
+	ChevronDownIcon,
+	ChevronUpIcon,
+	SearchIcon,
+} from "lucide-react";
 
 import { cn } from "@/lib/utils";
+import { useTranslations } from "next-intl";
+
+const SelectContext = React.createContext({
+	searchValue: "",
+	setSearchValue: () => {},
+});
 
 function Select({ ...props }) {
 	return <SelectPrimitive.Root data-slot='select' {...props} />;
@@ -36,31 +47,69 @@ function SelectTrigger({ className, size = "default", children, ...props }) {
 	);
 }
 
-function SelectContent({ className, children, position = "popper", ...props }) {
+function SelectContent({
+	className,
+	children,
+	position = "popper",
+	searchable = false,
+	...props
+}) {
+	const [searchValue, setSearchValue] = React.useState("");
+	const t = useTranslations("app");
+
 	return (
-		<SelectPrimitive.Portal>
-			<SelectPrimitive.Content
-				data-slot='select-content'
-				className={cn(
-					"bg-popover text-popover-foreground data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 relative z-50 max-h-(--radix-select-content-available-height) min-w-[8rem] origin-(--radix-select-content-transform-origin) overflow-x-hidden overflow-y-auto rounded-md border shadow-md ",
-					position === "popper" &&
-						"data-[side=bottom]:translate-y-1 data-[side=left]:-translate-x-1 data-[side=right]:translate-x-1 data-[side=top]:-translate-y-1",
-					className
-				)}
-				position={position}
-				{...props}>
-				<SelectScrollUpButton />
-				<SelectPrimitive.Viewport
+		<SelectContext.Provider value={{ searchValue, setSearchValue }}>
+			<SelectPrimitive.Portal>
+				<SelectPrimitive.Content
+					data-slot='select-content'
 					className={cn(
-						"p-1",
+						"bg-popover text-popover-foreground data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 relative z-50 max-h-(--radix-select-content-available-height) min-w-[8rem] origin-(--radix-select-content-transform-origin) overflow-x-hidden overflow-y-auto rounded-md border shadow-md ",
 						position === "popper" &&
-							"h-[var(--radix-select-trigger-height)] w-full min-w-[var(--radix-select-trigger-width)] scroll-my-1"
-					)}>
-					{children}
-				</SelectPrimitive.Viewport>
-				<SelectScrollDownButton />
-			</SelectPrimitive.Content>
-		</SelectPrimitive.Portal>
+							"data-[side=bottom]:translate-y-1 data-[side=left]:-translate-x-1 data-[side=right]:translate-x-1 data-[side=top]:-translate-y-1",
+						className
+					)}
+					position={position}
+					onCloseAutoFocus={(e) => {
+						if (searchable) {
+							setSearchValue("");
+						}
+						props.onCloseAutoFocus?.(e);
+					}}
+					{...props}>
+					<SelectScrollUpButton />
+					{searchable && (
+						<div className='px-2 py-4 sticky top-0 bg-popover z-10 '>
+							<div className='flex  items-center border rounded-md p-2.5 bg-background'>
+								<input
+									className='flex-1 bg-transparent border-none outline-none text-sm font-normal placeholder:text-muted-foreground'
+									placeholder={`${t("search")}...`}
+									value={searchValue}
+									onChange={(e) => setSearchValue(e.target.value)}
+									onClick={(e) => e.stopPropagation()}
+									onKeyDown={(e) => {
+										// Prevent select from closing when typing in search
+										if (e.key !== "Escape" && e.key !== "Enter") {
+											e.stopPropagation();
+										}
+									}}
+								/>
+
+								<SearchIcon className='size-4 mr-2 text-muted-foreground' />
+							</div>
+						</div>
+					)}
+					<SelectPrimitive.Viewport
+						className={cn(
+							"p-1",
+							position === "popper" &&
+								"h-[var(--radix-select-trigger-height)] w-full min-w-[var(--radix-select-trigger-width)] scroll-my-1"
+						)}>
+						{children}
+					</SelectPrimitive.Viewport>
+					<SelectScrollDownButton />
+				</SelectPrimitive.Content>
+			</SelectPrimitive.Portal>
+		</SelectContext.Provider>
 	);
 }
 
@@ -77,12 +126,24 @@ function SelectLabel({ className, ...props }) {
 	);
 }
 
-function SelectItem({ className, children, ...props }) {
+function SelectItem({ className, children, searchFilter = true, ...props }) {
+	const { searchValue } = React.useContext(SelectContext);
+
+	// If search is active and this item doesn't match the search, don't render it
+	if (
+		searchFilter &&
+		searchValue &&
+		!props.textValue?.toLowerCase().includes(searchValue.toLowerCase()) &&
+		!String(children).toLowerCase().includes(searchValue.toLowerCase())
+	) {
+		return null;
+	}
+
 	return (
 		<SelectPrimitive.Item
 			data-slot='select-item'
 			className={cn(
-				"focus:bg-accent focus:text-accent-foreground [&_svg:not([class*='text-'])]:text-muted-foreground relative flex w-full cursor-default items-center gap-2 rounded-sm py-1.5 pr-8 pl-2 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 *:[span]:last:flex *:[span]:last:items-center *:[span]:last:gap-2 cursor-pointer ",
+				"focus:bg-accent focus:text-accent-foreground [&_svg:not([class*='text-'])]:text-muted-foreground relative flex w-full cursor-default items-center gap-2 rounded-sm py-1.5 pr-8 pl-2 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 *:[span]:last:flex *:[span]:last:items-center *:[span]:last:gap-2  ",
 				className
 			)}
 			{...props}>

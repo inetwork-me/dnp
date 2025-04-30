@@ -684,3 +684,22 @@ export const doctorsDataList = [
 		image: Doctor8,
 	},
 ];
+
+export const bookAppointmentTabs = [
+	{
+		id: 1,
+		tab: "Choose doctor",
+	},
+	{
+		id: 2,
+		tab: "Personal data",
+	},
+	{
+		id: 3,
+		tab: "Pick a Date",
+	},
+	{
+		id: 4,
+		tab: "Payment",
+	},
+];

@@ -201,6 +201,20 @@
 		"Detailed Info": "المعلومات التفصيلية",
 		"Feedback": "التعليقات",
 		"We value your expert opinions on the medical profession": "نحن نؤمن بقيمة الآراء الخبراء على المهنة الطبية.",
-		"Tell us your feedback": "أخبرنا برأيك"
+		"Tell us your feedback": "أخبرنا برأيك",
+		"Book with": "احجز مع",
+		"Choose doctor": "اختر الطبيب",
+		"Personal data": "البيانات الشخصية",
+		"Pick a Date": "اختر تاريخ",
+		"Payment": "الدفع",
+		"Choose doctor and Department": "اختر الطبيب والقسم",
+		"Doctor Name": "اسم الطبيب",
+		"Department Name": "اسم القسم",
+		"Enter your personal information": "أدخل بياناتك الشخصية",
+		"Choose reservation date": "اختر تاريخ الحجز",
+		"Enter payment details": "أدخل تفاصيل الدفع",
+		"Next": "التالي",
+		"Back": "السابق",
+		"Confirm Appointment": "تأكيد الحجز"
 	}
 }

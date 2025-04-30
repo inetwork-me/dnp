@@ -5,7 +5,6 @@ import {
 	SelectContent,
 	SelectGroup,
 	SelectItem,
-	SelectLabel,
 	SelectTrigger,
 	SelectValue,
 } from "@/app/_shared/ui/select";
@@ -20,7 +19,7 @@ const FilterForm = () => {
 				<SelectTrigger>
 					<SelectValue placeholder='Select Branch' />
 				</SelectTrigger>
-				<SelectContent>
+				<SelectContent searchable={true}>
 					<SelectGroup>
 						<SelectItem value='apple'>Apple</SelectItem>
 						<SelectItem value='banana'>Banana</SelectItem>
@@ -30,11 +29,12 @@ const FilterForm = () => {
 					</SelectGroup>
 				</SelectContent>
 			</Select>
+
 			<Select>
 				<SelectTrigger>
 					<SelectValue placeholder='Select specialty' />
 				</SelectTrigger>
-				<SelectContent>
+				<SelectContent searchable={true}>
 					<SelectGroup>
 						<SelectItem value='apple'>Apple</SelectItem>
 						<SelectItem value='banana'>Banana</SelectItem>
@@ -48,7 +48,7 @@ const FilterForm = () => {
 				<SelectTrigger>
 					<SelectValue placeholder='Select doctor' />
 				</SelectTrigger>
-				<SelectContent>
+				<SelectContent searchable={true}>
 					<SelectGroup>
 						<SelectItem value='apple'>Apple</SelectItem>
 						<SelectItem value='banana'>Banana</SelectItem>

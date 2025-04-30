@@ -41,7 +41,7 @@ const MiddleNav = () => {
 						<form onSubmit={handleSearchSubmit} className='relative'>
 							<input
 								type='text'
-								placeholder={t("search")}
+								placeholder={`${t("search")}...`}
 								value={searchQuery}
 								onChange={handleSearchChange}
 								className='w-full h-12 py-3 px-4 bg-gray-100 pr-10 border-none rounded-xl focus:outline-none  '

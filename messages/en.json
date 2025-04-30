@@ -204,6 +204,20 @@
 		"Detailed Info": "Detailed Info",
 		"Feedback": "Feedback",
 		"We value your expert opinions on the medical profession": "We value your expert opinions on the medical profession.",
-		"Tell us your feedback": "Tell us your feedback!"
+		"Tell us your feedback": "Tell us your feedback!",
+		"Book with": "Book with",
+		"Choose doctor": "Choose doctor",
+		"Personal data": "Personal data",
+		"Pick a Date": "Pick a Date",
+		"Payment": "Payment",
+		"Choose doctor and Department": "Choose doctor and Department",
+		"Doctor Name": "Doctor Name",
+		"Department Name": "Department Name",
+		"Enter your personal information": "Enter your personal information",
+		"Choose reservation date": "Choose reservation date",
+		"Enter payment details": "Enter payment details",
+		"Next": "Next",
+		"Back": "Back",
+		"Confirm Appointment": "Confirm Appointment"
 	}
 }

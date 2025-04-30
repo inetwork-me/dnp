@@ -3,22 +3,14 @@ import DoctorImg from "@/public/images/doctors/img-1.png";
 import InfoBox from "./InfoBox";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import DoctorImgBox from "./DoctorImgBox";
 
-const DoctorProfile = () => {
+const DoctorProfile = ({ id = 1 }) => {
 	const t = useTranslations("app");
 	return (
 		<div className='container mx-auto py-14'>
 			<div className='w-full grid grid-cols-4 items-start gap-8'>
-				<div className='col-span-1'>
-					<div className='relative w-full h-[412px]'>
-						<Image
-							src={DoctorImg}
-							fill
-							alt='doctor name'
-							className='w-auto max-h-full object-cover rounded-xl'
-						/>
-					</div>
-				</div>
+				<DoctorImgBox image={DoctorImg} />
 
 				<div className='col-span-3'>
 					<div className='w-full flex flex-col items-start gap-8'>
@@ -119,7 +111,7 @@ const DoctorProfile = () => {
 						</div>
 
 						<Link
-							href='/doctors'
+							href={`/doctors/${id}/bookAppointment`}
 							className='md:w-[280px] w-full h-12 p-2.5 rounded-lg btn-bg flex items-center justify-center  cursor-pointer text-bse font-medium  '>
 							{t("Book Appointment")}
 						</Link>
