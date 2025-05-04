@@ -15,7 +15,7 @@ const TopNavLinks = () => {
 
 	return (
 		<div className='flex items-center gap-4'>
-			<NavLink navigate={"/trackYourOrder"}>
+			<NavLink navigate={"/myAccount/myOrders"}>
 				<TruckIcon />
 				<span className='text-sm font-medium text-gray-600 '>
 					{t("trackYourOrder")}

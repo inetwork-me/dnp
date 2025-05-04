@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+
 import { signIn } from "next-auth/react";
 import { useFormik } from "formik";
 
@@ -10,7 +10,8 @@ import NavigateLinkBtn from "./NavigateLinkBtn";
 
 import ErrorField from "./ErrorField";
 import PasswordField from "./PasswordField";
-import ActionButton from "./ActionButton";
+
+import { Button } from "@/app/_shared/ui/button";
 
 // INPUTS CLASS
 const inputClassName =
@@ -85,9 +86,9 @@ const LoginForm = ({ t }) => {
 				/>
 			</div>
 
-			<ActionButton type='submit' disabled={formik.isSubmitting}>
+			<Button className='w-full' type='submit' disabled={formik.isSubmitting}>
 				{formik.isSubmitting ? t("Loading") : t("Login")}
-			</ActionButton>
+			</Button>
 		</form>
 	);
 };

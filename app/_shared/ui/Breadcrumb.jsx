@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import BreadCrumbImg from "@/public/images/breadCrumb-img.png";
-import OverLay from "./OverLay";
+import OverLay from "../../_components/OverLay";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 
@@ -14,6 +14,7 @@ const BreadCrumb = ({ currentPage, parentPage, nestedPageTitle }) => {
 					<OverLay />
 					<Image
 						fill
+						sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
 						src={BreadCrumbImg}
 						alt={"breadCrumb-img"}
 						className='object-cover'
@@ -44,9 +45,9 @@ const BreadCrumb = ({ currentPage, parentPage, nestedPageTitle }) => {
 						)}
 
 						<span className='text-sm font-medium leading-6 text-white'>/</span>
-						<Link href='/' className='text-sm font-medium leading-6 text-white'>
+						<p className='text-sm font-medium leading-6 text-white'>
 							{currentPage}
-						</Link>
+						</p>
 					</div>
 				</div>
 			</section>

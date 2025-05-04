@@ -8,7 +8,7 @@ import { signupSchema } from "@/app/_utils/validationSchemas";
 
 import ErrorField from "./ErrorField";
 import PasswordField from "./PasswordField";
-import ActionButton from "./ActionButton";
+import { Button } from "@/app/_shared/ui/button";
 
 // INPUTS CLASS
 const inputClassName =
@@ -95,9 +95,9 @@ const SignUpForm = ({ t }) => {
 				value={formik.values.confirmPassword}
 			/>
 
-			<ActionButton type='submit' disabled={formik.isSubmitting}>
+			<Button className='w-full' type='submit' disabled={formik.isSubmitting}>
 				{formik.isSubmitting ? t("Loading") : t("Create a new account")}
-			</ActionButton>
+			</Button>
 		</form>
 	);
 };

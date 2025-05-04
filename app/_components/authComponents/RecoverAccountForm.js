@@ -6,7 +6,8 @@ import { useRouter } from "next/navigation";
 import { recoverAccountSchema } from "@/app/_utils/validationSchemas";
 
 import ErrorField from "./ErrorField";
-import ActionButton from "./ActionButton";
+
+import { Button } from "react-day-picker";
 
 // INPUTS CLASS
 const inputClassName =
@@ -60,9 +61,9 @@ const RecoverAccountForm = ({ t }) => {
 				/>
 			</div>
 
-			<ActionButton type='submit' disabled={formik.isSubmitting}>
+			<Button className='w-full' type='submit' disabled={formik.isSubmitting}>
 				{formik.isSubmitting ? t("Loading") : t("Send")}
-			</ActionButton>
+			</Button>
 		</form>
 	);
 };

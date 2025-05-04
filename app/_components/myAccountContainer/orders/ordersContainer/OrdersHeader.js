@@ -1,4 +1,4 @@
-import Currency from "@/app/_components/Currency";
+import Currency from "@/app/_shared/ui/Currency";
 import { formatDate } from "@/app/_utils/formatDate";
 import React from "react";
 

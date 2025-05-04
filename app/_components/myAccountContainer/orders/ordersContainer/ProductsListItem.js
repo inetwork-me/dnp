@@ -1,4 +1,4 @@
-import Currency from "@/app/_components/Currency";
+import Currency from "@/app/_shared/ui/Currency";
 import Image from "next/image";
 
 const ProductsListItem = ({ product, t }) => {
@@ -40,9 +40,9 @@ const ProductsListItem = ({ product, t }) => {
 					<path
 						d='M18 6.00005L6 18M5.99995 6L17.9999 18'
 						stroke='#6B7280'
-						stroke-width='1.5'
-						stroke-linecap='round'
-						stroke-linejoin='round'
+						strokeWidth='1.5'
+						strokeLinecap='round'
+						strokeLinejoin='round'
 					/>
 				</svg>
 			</button>

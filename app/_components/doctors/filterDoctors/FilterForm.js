@@ -1,5 +1,7 @@
 "use client";
 
+import { useTranslations } from "next-intl";
+import { Button } from "@/app/_shared/ui/button";
 import {
 	Select,
 	SelectContent,
@@ -8,8 +10,6 @@ import {
 	SelectTrigger,
 	SelectValue,
 } from "@/app/_shared/ui/select";
-import ActionButton from "../../authComponents/ActionButton";
-import { useTranslations } from "next-intl";
 
 const FilterForm = () => {
 	const t = useTranslations("app");
@@ -58,9 +58,9 @@ const FilterForm = () => {
 					</SelectGroup>
 				</SelectContent>
 			</Select>
-			<ActionButton className='h-12 rounded-xl' type='submit'>
+			<Button className='h-12' type='submit'>
 				{t("search")}
-			</ActionButton>
+			</Button>
 		</form>
 	);
 };

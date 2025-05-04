@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import BreadCrumb from "@/app/_components/BreadCrumb";
+import BreadCrumb from "@/app/_shared/ui/BreadCrumb";
 import ProductDescription from "@/app/_components/productDetails/ProductDescription";
 import ProductDetails from "@/app/_components/productDetails/ProductDetails";
 import WriteReview from "@/app/_components/productDetails/writeReview/WriteReview";

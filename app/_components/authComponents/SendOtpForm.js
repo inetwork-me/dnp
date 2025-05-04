@@ -6,7 +6,8 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { sendOtpSchema } from "@/app/_utils/validationSchemas";
 
 import ErrorField from "./ErrorField";
-import ActionButton from "./ActionButton";
+import ActionButton from "../../_shared/ui/ActionButton";
+import { Button } from "react-day-picker";
 
 // INPUTS CLASS
 const inputClassName =
@@ -73,9 +74,9 @@ const SendOtpForm = ({ t }) => {
 				/>
 			</div>
 
-			<ActionButton type='submit' disabled={formik.isSubmitting}>
+			<Button className='w-full' type='submit' disabled={formik.isSubmitting}>
 				{formik.isSubmitting ? t("Loading") : t("Submit")}
-			</ActionButton>
+			</Button>
 
 			{resendVisible && (
 				<div className='flex items-center justify-center gap-1.5'>

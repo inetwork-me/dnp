@@ -1,5 +1,5 @@
 import React from "react";
-import Headline from "../Headline";
+import Headline from "../../_shared/ui/Headline";
 import BrandsCards from "./BrandsCards";
 
 const ShopByBrands = ({ headlineTitle, headlineDescription }) => {

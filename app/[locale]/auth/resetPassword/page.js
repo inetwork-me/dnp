@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 
 // components
-import Headline from "@/app/_components/Headline";
+import Headline from "@/app/_shared/ui/Headline";
 import RecoverAccountForm from "@/app/_components/authComponents/RecoverAccountForm";
 
 export default function page() {

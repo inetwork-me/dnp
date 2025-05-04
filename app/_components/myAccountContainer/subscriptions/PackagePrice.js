@@ -1,4 +1,4 @@
-import Currency from "../../Currency";
+import Currency from "../../../_shared/ui/Currency";
 
 const PackagePrice = ({ t }) => {
 	return (

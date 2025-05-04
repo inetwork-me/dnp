@@ -1,4 +1,4 @@
-import PackageStatus from "./PackageStatus";
+import Badge from "@/app/_shared/ui/Badge";
 
 const PackageInfo = ({ t }) => {
 	return (
@@ -18,7 +18,7 @@ const PackageInfo = ({ t }) => {
 					{t("remainingDays")} 14 Days
 				</p>
 			</div>
-			<PackageStatus t={t} />
+			<Badge badge='active' className='text-gray-950 bg-[#86EFAC]' />
 		</div>
 	);
 };

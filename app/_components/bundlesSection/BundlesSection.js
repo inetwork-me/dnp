@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 
-import Headline from "../Headline";
+import Headline from "../../_shared/ui/Headline";
 import BundlesWrapper from "./BundlesWrapper";
 
 const BundlesSection = ({ headlineTitle, headlineDescription }) => {

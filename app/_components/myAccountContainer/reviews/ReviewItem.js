@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 
 import Link from "next/link";
 import RatingStars from "../../productDetails/StarRating";
-import Modal from "../../Modal";
+import Modal from "../../../_shared/ui/Modal";
 import ConfirmDeleteReview from "./ConfirmDeleteReview";
 
 const ReviewItem = ({ review }) => {

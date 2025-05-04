@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 
 // components
-import Headline from "@/app/_components/Headline";
+import Headline from "@/app/_shared/ui/Headline";
 import CreateNewPasswordForm from "@/app/_components/authComponents/CreateNewPasswordForm";
 
 export default function page() {

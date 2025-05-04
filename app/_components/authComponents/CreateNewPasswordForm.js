@@ -5,7 +5,8 @@ import { useRouter } from "next/navigation";
 import { createNewPasswordSchema } from "@/app/_utils/validationSchemas";
 
 import PasswordField from "./PasswordField";
-import ActionButton from "./ActionButton";
+import ActionButton from "../../_shared/ui/ActionButton";
+import { Button } from "@/app/_shared/ui/button";
 
 const CreateNewPasswordForm = ({ t }) => {
 	const router = useRouter();
@@ -59,9 +60,9 @@ const CreateNewPasswordForm = ({ t }) => {
 				touched={formik.touched.confirmPassword}
 				value={formik.values.confirmPassword}
 			/>
-			<ActionButton type='submit' disabled={formik.isSubmitting}>
+			<Button type='submit' disabled={formik.isSubmitting}>
 				{formik.isSubmitting ? t("Loading") : t("Save & back to login")}
-			</ActionButton>
+			</Button>
 		</form>
 	);
 };

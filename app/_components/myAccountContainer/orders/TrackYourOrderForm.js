@@ -8,7 +8,8 @@ import { trackYourOrderSchema } from "@/app/_utils/validationSchemas";
 // components
 import SectionTitle from "../SectionTitle";
 import ErrorField from "../../authComponents/ErrorField";
-import ActionButton from "../../authComponents/ActionButton";
+
+import { Button } from "@/app/_shared/ui/button";
 
 // INPUTS CLASS
 const inputClassName =
@@ -64,9 +65,9 @@ const TrackYourOrderForm = () => {
 							error={formik.errors.orderID}
 						/>
 					</div>
-					<ActionButton className='md:w-auto w-full h-[48px] py-3 px-[40px]'>
+					<Button size='default' className='md:w-auto w-full '>
 						{t("orders.trackOrder")}
-					</ActionButton>
+					</Button>
 				</div>
 			</form>
 		</div>

@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 
 // components
-import BreadCrumb from "@/app/_components/BreadCrumb";
+import BreadCrumb from "@/app/_shared/ui/BreadCrumb";
 import BookAppointmentWrapper from "@/app/_components/doctors/bookAppointmentWrapper/BookAppointmentWrapper";
 
 export default function page() {

@@ -215,6 +215,14 @@
 		"Enter payment details": "أدخل تفاصيل الدفع",
 		"Next": "التالي",
 		"Back": "السابق",
-		"Confirm Appointment": "تأكيد الحجز"
+		"Confirm Appointment": "تأكيد الحجز",
+		"Your appointment has been successfully scheduled": "تم تحديد موعدك بنجاح",
+		"We will provide you with updates via email": "سنقدم لك تحديثات عبر البريد الإلكتروني",
+		"Go to Home Page": "العودة إلى الصفحة الرئيسية",
+		"Academy topics": "مواضيع الأكاديمية",
+		"Check out our Nutrition Academy for tips on healthy eating": "تحقق من أكاديميتنا الغذائية للحصول على نصائح حول تناول الأطعمة الصحية.",
+		"Learn More": "معرفة المزيد",
+		"Course": "دورة",
+		"Article": "مقال"
 	}
 }

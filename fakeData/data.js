@@ -55,6 +55,20 @@ import Doctor6 from "@/public/images/doctors/img-6.png";
 import Doctor7 from "@/public/images/doctors/img-7.png";
 import Doctor8 from "@/public/images/doctors/img-8.png";
 
+// /topics image
+import Topic1 from "@/public/images/academy/img-1.jpg";
+import Topic2 from "@/public/images/academy/img-2.jpg";
+import Topic3 from "@/public/images/academy/img-3.jpg";
+import Topic4 from "@/public/images/academy/img-4.png";
+import Topic5 from "@/public/images/academy/img-5.jpg";
+import Topic6 from "@/public/images/academy/img-6.jpg";
+
+// courses images
+import Course1 from "@/public/images/academy/course-1.jpg";
+import Course2 from "@/public/images/academy/course-2.png";
+import Course3 from "@/public/images/academy/course-3.png";
+import Course4 from "@/public/images/academy/course-4.png";
+
 //  navigation items
 export const navItems = [
 	{ name: "navigation.home", path: "/" },
@@ -64,10 +78,10 @@ export const navItems = [
 	{
 		name: "navigation.doctors",
 		subPages: [
-			{ name: "navigation.allDoctors", path: "/doctors" },
+			{ name: "navigation.allDoctors", path: "/doctors/" },
 			{
 				name: "navigation.academy",
-				path: "doctors/academy",
+				path: "/doctors/academy/",
 			},
 		],
 	},
@@ -270,17 +284,17 @@ export const footerLinks = [
 			},
 			{
 				id: 2,
-				href: "/bmiCalculator",
+				href: "bmiCalculator/",
 				title: "navigation.bmiCalculator",
 			},
 			{
 				id: 3,
-				href: "/doctors",
+				href: "doctors/",
 				title: "navigation.doctors",
 			},
 			{
 				id: 4,
-				href: "/devices",
+				href: "devices/",
 				title: "navigation.devices",
 			},
 		],
@@ -701,5 +715,89 @@ export const bookAppointmentTabs = [
 	{
 		id: 4,
 		tab: "Payment",
+	},
+];
+
+export const topics = [
+	{
+		id: 1,
+		title: "Content Title",
+		description: "Description about the content the academy provide",
+		image: Topic1,
+		category: "Course",
+	},
+	{
+		id: 2,
+		title: "Content Title",
+		description: "Description about the content the academy provide",
+		image: Topic2,
+		category: "Article",
+	},
+	{
+		id: 3,
+		title: "Content Title",
+		description: "Description about the content the academy provide",
+		image: Topic3,
+		category: "Article",
+	},
+	{
+		id: 4,
+		title: "Content Title",
+		description: "Description about the content the academy provide",
+		image: Topic4,
+		category: "Course",
+	},
+	{
+		id: 5,
+		title: "Content Title",
+		description: "Description about the content the academy provide",
+		image: Topic5,
+		category: "Article",
+	},
+	{
+		id: 6,
+		title: "Content Title",
+		description: "Description about the content the academy provide",
+		image: Topic6,
+		category: "Course",
+	},
+];
+
+export const coursesList = [
+	{
+		id: 1,
+		title: "Course Title",
+		description: "Description about the course",
+		image: Course1,
+	},
+	{
+		id: 2,
+		title: "Course Title",
+		description: "Description about the course",
+		image: Course2,
+	},
+	{
+		id: 3,
+		title: "Course Title",
+		description: "Description about the course",
+		image: Course3,
+	},
+	{
+		id: 4,
+		title: "Course Title",
+		description: "Description about the course",
+		image: Course4,
+	},
+	{
+		id: 5,
+		title: "Course Title",
+		description: "Description about the course",
+		image: Course1,
+	},
+	{
+		id: 6,
+		title: "Course Title",
+		description: "Description about the course",
+		image: Course1,
 	},
 ];

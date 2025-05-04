@@ -5,8 +5,9 @@ import { useTranslations } from "next-intl";
 import { feedbackSchema } from "@/app/_utils/validationSchemas";
 
 // components
-import ActionButton from "../../authComponents/ActionButton";
+
 import ErrorField from "../../authComponents/ErrorField";
+import { Button } from "@/app/_shared/ui/button";
 
 // INPUTS CLASS
 const inputClassName =
@@ -99,9 +100,9 @@ const Form = () => {
 					/>
 				</div>
 
-				<ActionButton className='md:w-72 w-full  h-14 rounded-xl' type='submit'>
+				<Button className='md:w-72 w-full  h-14 rounded-xl' type='submit'>
 					{t("Submit")}
-				</ActionButton>
+				</Button>
 			</form>
 		</div>
 	);

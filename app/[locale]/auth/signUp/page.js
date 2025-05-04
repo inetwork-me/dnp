@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 
 // components
 import SocialLoginButtons from "@/app/_components/authComponents/SocialLoginButtons";
-import Headline from "@/app/_components/Headline";
+import Headline from "@/app/_shared/ui/Headline";
 import SignUpForm from "@/app/_components/authComponents/SignUpForm";
 import NavigateLinkBtn from "@/app/_components/authComponents/NavigateLinkBtn";
 

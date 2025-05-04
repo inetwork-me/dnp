@@ -82,3 +82,17 @@ export const feedbackSchema = Yup.object({
 	email: Yup.string().email("Invalid email address").required("Required"),
 	message: Yup.string().required("Required"),
 });
+
+// book appointment schema
+export const bookAppointmentSchema = Yup.object({
+	doctorName: Yup.string().required("Required"),
+	departmentName: Yup.string().required("Required"),
+	fullName: Yup.string().required("Required"),
+	email: Yup.string().email("Invalid email address").required("Required"),
+	phoneNumber: Yup.string().required("Required"),
+	pickDate: Yup.string().required("Required"),
+	cardNumber: Yup.string().required("Required"),
+	cardHolderName: Yup.string().required("Required"),
+	cardExpiryDate: Yup.string().required("Required"),
+	cardCvv: Yup.string().required("Required"),
+});

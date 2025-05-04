@@ -1,13 +1,13 @@
 import { useTranslations } from "next-intl";
 import React from "react";
-import Headline from "../../Headline";
+import Headline from "../../../_shared/ui/Headline";
 import Form from "./Form";
 import ImageCard from "./ImageCard";
 
-const SendFeedBackForm = () => {
+const SendFeedBackForm = ({ bgColor = "bg-white" }) => {
 	const t = useTranslations("app");
 	return (
-		<div className='w-full bg-white py-12'>
+		<div className={` ${bgColor}  w-full py-12`}>
 			<div className='container mx-auto '>
 				<Headline
 					titleClassName='text-3xl font-semibold text-gray-950 '

@@ -24,7 +24,7 @@ const DoctorCard = ({ doctor }) => {
 			</div>
 
 			<Link
-				href={`/doctors/${doctor.id}`}
+				href={`doctors/${doctor.id}`}
 				className='h-12 w-full p-2.5 rounded-lg btn-bg flex items-center justify-center  cursor-pointer text-bse font-medium  '>
 				{t("Doctor Profile")}
 			</Link>

@@ -63,11 +63,7 @@ const EditForm = ({ t }) => {
 
 			<div className='w-full my-3 h-[1px] bg-gray-200' />
 
-			<EditPaymentInformation
-				inputClassName={inputClassName}
-				formik={formik}
-				t={t}
-			/>
+			<EditPaymentInformation formik={formik} t={t} />
 		</form>
 	);
 };

@@ -3,11 +3,11 @@
 import { useRouter } from "next/navigation";
 
 import { useTranslations } from "next-intl";
-import Headline from "@/app/_components/Headline";
+import Headline from "@/app/_shared/ui/Headline";
 
-import ActionButton from "@/app/_components/authComponents/ActionButton";
 import SocialLoginButtons from "@/app/_components/authComponents/SocialLoginButtons";
 import LoginForm from "@/app/_components/authComponents/LoginForm";
+import { Button } from "@/app/_shared/ui/button";
 
 export default function page() {
 	const t = useTranslations("app");
@@ -29,9 +29,12 @@ export default function page() {
 
 			<LoginForm t={t} />
 
-			<ActionButton outline onClick={() => handleNavigateTo("/auth/signUp")}>
+			<Button
+				variant='outline'
+				className='w-full'
+				onClick={() => handleNavigateTo("/auth/signup")}>
 				{t("Create new account")}
-			</ActionButton>
+			</Button>
 
 			<div className='w-full border border-gray-200'></div>
 

@@ -218,6 +218,14 @@
 		"Enter payment details": "Enter payment details",
 		"Next": "Next",
 		"Back": "Back",
-		"Confirm Appointment": "Confirm Appointment"
+		"Confirm Appointment": "Confirm Appointment",
+		"Your appointment has been successfully scheduled": "Your appointment has been successfully scheduled.",
+		"We will provide you with updates via email": "We will provide you with updates via email.",
+		"Go to Home Page": "Go to Home Page",
+		"Academy topics": "Academy topics",
+		"Check out our Nutrition Academy for tips on healthy eating": "Check out our Nutrition Academy for tips on healthy eating.",
+		"Learn More": "Learn More",
+		"Course": "Course",
+		"Article": "Article"
 	}
 }

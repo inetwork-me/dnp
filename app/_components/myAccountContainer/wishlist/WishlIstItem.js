@@ -1,6 +1,7 @@
 import Image from "next/image";
-import Currency from "../../Currency";
-import ActionButton from "../../authComponents/ActionButton";
+import Currency from "../../../_shared/ui/Currency";
+
+import { Button } from "@/app/_shared/ui/button";
 
 const WishlIstItem = ({ product, t }) => {
 	return (
@@ -29,10 +30,10 @@ const WishlIstItem = ({ product, t }) => {
 			</div>
 
 			<div className='flex-1 flex flex-col items-center gap-4'>
-				<ActionButton className='h-12'>{t("addToCart")}</ActionButton>
-				<ActionButton className='h-12' outline={true}>
+				<Button size='default'>{t("addToCart")}</Button>
+				<Button variant='outline' size='default'>
 					{t("removeItem")}
-				</ActionButton>
+				</Button>
 			</div>
 		</div>
 	);

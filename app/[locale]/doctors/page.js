@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 
 // components
-import BreadCrumb from "@/app/_components/BreadCrumb";
+import BreadCrumb from "@/app/_shared/ui/BreadCrumb";
 import FilterDoctors from "@/app/_components/doctors/filterDoctors/FilterDoctors";
 import DoctorsCardsWrapper from "@/app/_components/doctors/doctorsCardsWrapper/DoctorsCardsWrapper";
 

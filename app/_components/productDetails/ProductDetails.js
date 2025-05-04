@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import ProductImages from "./ProductImages";
 import ProductsText from "./ProductsText";
-import Modal from "../Modal";
+import Modal from "../../_shared/ui/Modal";
 import CaloriesGuide from "@/public/images/Guide.png";
 
 const ProductDetails = () => {

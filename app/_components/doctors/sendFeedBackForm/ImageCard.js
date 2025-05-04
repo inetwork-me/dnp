@@ -8,6 +8,7 @@ const ImageCard = () => {
 				<Image
 					src={FeedbackImg}
 					fill
+					sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
 					alt='Feed-back-image'
 					className='w-auto max-h-full object-cover rounded-xl'
 				/>

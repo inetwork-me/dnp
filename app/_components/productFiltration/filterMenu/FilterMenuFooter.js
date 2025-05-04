@@ -1,15 +1,16 @@
 import React from "react";
-import ActionButton from "../../authComponents/ActionButton";
+
 import { useTranslations } from "next-intl";
+import { Button } from "@/app/_shared/ui/button";
 
 const FilterMenuFooter = () => {
 	const t = useTranslations("app");
 
 	return (
 		<div className='w-full py-5'>
-			<ActionButton className='h-[43px] rounded-lg' type='submit'>
+			<Button className='h-[43px] rounded-lg' type='submit'>
 				{t("Apply Filters")}
-			</ActionButton>
+			</Button>
 		</div>
 	);
 };

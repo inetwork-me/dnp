@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 
 // components
 
-import BreadCrumb from "@/app/_components/BreadCrumb";
+import BreadCrumb from "@/app/_shared/ui/BreadCrumb";
 import Sidebar from "@/app/_components/myAccountContainer/sidebar/Sidebar";
 import MyAccountContainer from "@/app/_components/myAccountContainer/MyAccountContainer";
 
