@@ -14,7 +14,7 @@ export default function page() {
 	return (
 		<>
 			<Headline
-				HeadlineAlign='items-center'
+				className='items-center'
 				titleClassName='text-[30px] font-bold leading-[42px] '
 				title={t("Sign up")}
 				description={t(

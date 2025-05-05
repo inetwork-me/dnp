@@ -96,3 +96,18 @@ export const bookAppointmentSchema = Yup.object({
 	cardExpiryDate: Yup.string().required("Required"),
 	cardCvv: Yup.string().required("Required"),
 });
+
+// bmiCalculatorSchema
+export const bmiCalculatorSchema = Yup.object({
+	gender: Yup.string().required("Required"),
+	physicalActivity: Yup.string().required("Required"),
+	weight: Yup.number()
+		.required("Required")
+		.min(30, "Weight must be at least 30 kg")
+		.max(250, "Weight must be at most 250 kg"),
+
+	height: Yup.number()
+		.required("Required")
+		.min(130, "Height must be at least 130 cm")
+		.max(250, "Height must be at most 250 cm"),
+});

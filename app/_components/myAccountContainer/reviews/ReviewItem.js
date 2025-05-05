@@ -18,7 +18,7 @@ const ReviewItem = ({ review }) => {
 				<div className='w-full  flex  justify-between items-center '>
 					<RatingStars rating={review.ratingCount} />
 					<Link
-						href={"/products/1"}
+						href={"/products/1?#rating"}
 						className='flex justify-center items-center gap-1.5 bg-gray-100 border border-transparent hover:bg-white hover:border-gray-300 rounded-lg text-gray-800 text-[16px] leading-7 font-normal px-6 py-1.5 transition-all duration-100 ease-in-out cursor-pointer
 					'>
 						{t("myProfile.editProfile")}

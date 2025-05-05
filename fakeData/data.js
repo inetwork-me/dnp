@@ -69,6 +69,14 @@ import Course2 from "@/public/images/academy/course-2.png";
 import Course3 from "@/public/images/academy/course-3.png";
 import Course4 from "@/public/images/academy/course-4.png";
 
+// bmi calculator images
+import Icon1 from "@/public/icons/bmiProfileSummary/icon1.svg";
+import Icon2 from "@/public/icons/bmiProfileSummary/icon2.svg";
+import Icon3 from "@/public/icons/bmiProfileSummary/icon3.svg";
+import Icon4 from "@/public/icons/bmiProfileSummary/icon4.svg";
+import Icon5 from "@/public/icons/bmiProfileSummary/icon5.svg";
+import Icon6 from "@/public/icons/bmiProfileSummary/icon6.svg";
+
 //  navigation items
 export const navItems = [
 	{ name: "navigation.home", path: "/" },
@@ -799,5 +807,58 @@ export const coursesList = [
 		title: "Course Title",
 		description: "Description about the course",
 		image: Course1,
+	},
+];
+
+export const bmiProfileInfo = [
+	{
+		id: 1,
+		title: "BMI Level",
+		description: "Body Mass Index is a measure",
+		icon: <Icon1 />,
+		bmiValue: "45",
+		result: "Normal",
+	},
+	{
+		id: 2,
+		title: "Body Type",
+		description: "Determine the degree",
+		icon: <Icon2 />,
+		bmiValue: "",
+		result: "",
+	},
+	{
+		id: 3,
+		title: "BMR",
+		description: "Basal Metabolic Rate",
+		icon: <Icon3 />,
+		bmiValue: "1609",
+		result: "Normal",
+	},
+	{
+		id: 4,
+		title: "Water",
+		description: "Daily water intake",
+		icon: <Icon4 />,
+		bmiValue: "2.5 Ltr",
+		result: "Drink water daily.",
+	},
+	{
+		id: 5,
+		title: "TEE",
+		description:
+			"Total Energy expenditure refers to the amount of energy an individual uses to maintain essential body functions",
+		icon: <Icon5 />,
+		bmiValue: "2212",
+		result: "Total Energy Expenditure",
+	},
+	{
+		id: 6,
+		title: "Calories",
+		description:
+			"Calorie: Average Daily Calories Needed to Lose Weight Or Gain Weight",
+		icon: <Icon6 />,
+		bmiValue: "2212",
+		result: "Normal",
 	},
 ];

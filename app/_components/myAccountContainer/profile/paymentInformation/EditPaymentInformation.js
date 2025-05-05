@@ -1,7 +1,7 @@
 import React from "react";
 import SectionTitle from "../../SectionTitle";
 import { CreditCardInputsWrapper } from "../../../../_shared/ui/CreditCardInputsWrapper";
-import { Button } from "react-day-picker";
+import { Button } from "@/app/_shared/ui/button";
 
 const EditPaymentInformation = ({ formik, t }) => {
 	return (
