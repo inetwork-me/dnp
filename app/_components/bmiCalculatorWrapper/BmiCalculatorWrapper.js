@@ -11,9 +11,9 @@ const BmiCalculatorWrapper = () => {
 					className='items-center text-center '
 					titleClassName='text-4xl font-semibold  text-gray-950'
 					title={t("navigation.bmiCalculator")}
-					description={
+					description={t(
 						"Discover your Body Mass Index (BMI) by entering your personal body information"
-					}
+					)}
 				/>
 				<BodyInfoForm />
 			</div>

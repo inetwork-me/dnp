@@ -1,6 +1,7 @@
 import ErrorField from "@/app/_components/authComponents/ErrorField";
 import React from "react";
 import Headline from "./Headline";
+import { useParams } from "next/navigation";
 
 const SliderInput = ({
 	label,
@@ -16,6 +17,15 @@ const SliderInput = ({
 }) => {
 	// Calculate fill percentage for gradient
 	const percentage = ((value - min) / (max - min)) * 100;
+
+	// Determine gradient direction based on RTL setting
+
+	const { locale } = useParams();
+
+	const isRTL = locale === "ar";
+
+	// Determine gradient direction based on RTL setting
+	const gradientDirection = isRTL ? "to left" : "to right";
 
 	return (
 		<div className='w-full flex flex-col gap-4 items-start py-5 border-t border-[#E5E7EB] dark:border-gray-700'>
@@ -51,8 +61,9 @@ const SliderInput = ({
 					onChange={onChange}
 					className='w-full h-[5px] appearance-none rounded-lg cursor-pointer focus:outline-none transition'
 					style={{
-						background: `linear-gradient(to right, #7c3c8f 0%, #7c3c8f ${percentage}%, #E5E7EB ${percentage}%, #E5E7EB 100%)`,
+						background: `linear-gradient(${gradientDirection}, #7c3c8f 0%, #7c3c8f ${percentage}%, #E5E7EB ${percentage}%, #E5E7EB 100%)`,
 					}}
+					dir={isRTL ? "rtl" : "ltr"}
 				/>
 
 				<style jsx>{`
