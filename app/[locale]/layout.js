@@ -25,10 +25,15 @@ import { CurrencyProvider } from "@/contexts/CurrencyContext";
 const inter = Inter({ subsets: ["latin"] }); // english font
 const cairo = Cairo({ subsets: ["arabic"] }); // arabic font
 
-export const metadata = {
-	title: "DNP-Nutrition",
-	description: "description",
-};
+export async function generateMetadata() {
+	return {
+		title: "DNP-Nutrition",
+		description: "description",
+		other: {
+			"Cache-Control": "no-store, max-age=0",
+		},
+	};
+}
 
 export default async function RootLayout({ children, params }) {
 	const { locale } = await params;

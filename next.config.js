@@ -6,6 +6,17 @@ const withNextIntl = createNextIntlPlugin();
 const nextConfig = {
 	reactStrictMode: true,
 
+	// Add images configuration with more specific control
+	images: {
+		remotePatterns: [
+			{
+				protocol: "https",
+				hostname: "inetwork-hub.store",
+				pathname: "/**",
+			},
+		],
+	},
+
 	webpack(config) {
 		config.module.rules.push({
 			test: /\.svg$/,

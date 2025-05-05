@@ -9,19 +9,16 @@ const BreadCrumb = ({ currentPage, parentPage, nestedPageTitle }) => {
 	const t = useTranslations("app");
 	return (
 		<>
-			<section className='relative w-full'>
-				<div className='relative w-full h-[204px] flex flex-col items-start py-14 px-28 isolate  '>
-					<OverLay />
-					<Image
-						fill
-						sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
-						src={BreadCrumbImg}
-						alt={"breadCrumb-img"}
-						className='object-cover'
-					/>
-				</div>
-
-				<div className='w-1/2 absolute rtl:left-auto right-28 left-28 top-1/6 z-20'>
+			<div className='relative w-full h-[204px] flex flex-col items-start py-14 px-28 isolate  '>
+				<OverLay />
+				<Image
+					fill
+					sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
+					src={BreadCrumbImg}
+					alt={"breadCrumb-img"}
+					className='object-cover'
+				/>
+				<div className='container mx-auto isolate z-2'>
 					<h3 className='text-[40px] font-semibold leading-[51px] text-white mb-6'>
 						{currentPage}
 					</h3>
@@ -50,7 +47,7 @@ const BreadCrumb = ({ currentPage, parentPage, nestedPageTitle }) => {
 						</p>
 					</div>
 				</div>
-			</section>
+			</div>
 		</>
 	);
 };

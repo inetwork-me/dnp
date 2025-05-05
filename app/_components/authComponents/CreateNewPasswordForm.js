@@ -5,7 +5,6 @@ import { useRouter } from "next/navigation";
 import { createNewPasswordSchema } from "@/app/_utils/validationSchemas";
 
 import PasswordField from "./PasswordField";
-import ActionButton from "../../_shared/ui/ActionButton";
 import { Button } from "@/app/_shared/ui/button";
 
 const CreateNewPasswordForm = ({ t }) => {
