@@ -8,7 +8,7 @@ const Badge = ({ badge, className }) => {
 		<div
 			className={cn(
 				className,
-				"flex items-center py-1 px-2.5 rounded-full text-sm font-medium"
+				"w-max flex items-center py-1 px-2.5 rounded-full text-sm font-medium"
 			)}>
 			{t(badge)}
 		</div>

@@ -87,5 +87,5 @@ export const authOptions = () => ({
 	},
 
 	// Debug mode for development
-	debug: process.env.NODE_ENV === "development",
+	// debug: process.env.NODE_ENV === "development",
 });

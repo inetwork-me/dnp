@@ -11,7 +11,7 @@ const BodyInfoCard = ({ item }) => {
 		setShowDescription(!showDescription);
 	};
 	return (
-		<div className='col-span-1 space-y-6  rounded-xl border border-gray-200 bg-white p-8 shadow-md'>
+		<div className='col-span-1 space-y-3  rounded-xl border border-gray-200 bg-white p-8 shadow-md'>
 			<InfoCardHeader
 				showDescription={showDescription}
 				onClick={handleShowDescription}

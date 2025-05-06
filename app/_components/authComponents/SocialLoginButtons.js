@@ -1,8 +1,8 @@
 import { signIn } from "next-auth/react";
 
-import GoogleIcon from "@/public/icons/GoogleIcon.svg";
-import FacebookIcon from "@/public/icons/CircleFacebookIcon.svg";
-import AppleIcon from "@/public/icons/AppleIcon.svg";
+import GoogleIcon from "@/public/icons/googleIcon.svg";
+import FacebookIcon from "@/public/icons/circleFacebookIcon.svg";
+import AppleIcon from "@/public/icons/appleIcon.svg";
 
 const providers = [
 	{

@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
-import DarkIcon from "@/public/icons/DarkIcon.svg";
-import LightIcon from "@/public/icons/LightIcon.svg";
+import DarkIcon from "@/public/icons/darkIcon.svg";
+import LightIcon from "@/public/icons/lightIcon.svg";
 
 const ThemeToggle = () => {
 	const [mounted, setMounted] = useState(false);

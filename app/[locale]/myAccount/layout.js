@@ -1,31 +1,29 @@
-'use client';
+"use client";
 
-import { usePathname } from 'next/navigation';
-import { useTranslations } from 'next-intl';
+import { usePathname } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 // components
 
-import BreadCrumb from '@/app/_shared/ui/Breadcrumb';
-import Sidebar from '@/app/_components/myAccountContainer/sidebar/Sidebar';
-import MyAccountContainer from '@/app/_components/myAccountContainer/MyAccountContainer';
+import BreadCrumb from "@/app/_shared/ui/BreadCrumb";
+import Sidebar from "@/app/_components/myAccountContainer/sidebar/Sidebar";
+import MyAccountContainer from "@/app/_components/myAccountContainer/MyAccountContainer";
 
 // profile data
-import { profileData } from '@/app/_components/myAccountContainer/data';
+import { profileData } from "@/app/_components/myAccountContainer/data";
 
 const Page = ({ children }) => {
-	const t = useTranslations('app');
+	const t = useTranslations("app");
 	const pathname = usePathname();
 
-	const currentPage = profileData.find(
-		(item) => item.href === pathname
-	)?.title;
+	const currentPage = profileData.find((item) => item.href === pathname)?.title;
 
 	return (
 		<section className='bg-[#F9FAFB]'>
 			<BreadCrumb
 				currentPage={t(currentPage)}
-				nestedPageTitle={t('My Account')}
-				parentPage={'myAccount'}
+				nestedPageTitle={t("My Account")}
+				parentPage={"myAccount"}
 			/>
 
 			<section className='container mx-auto py-14'>

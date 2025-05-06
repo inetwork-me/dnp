@@ -1,4 +1,5 @@
 import { Button } from "@/app/_shared/ui/button";
+import Headline from "@/app/_shared/ui/Headline";
 import { useTranslations } from "next-intl";
 
 const Icon = ({ showDescription }) => {
@@ -123,7 +124,10 @@ const InfoCardHeader = ({ onClick, showDescription, item }) => {
 	const t = useTranslations("app");
 	return (
 		<div className='flex justify-between items-center'>
-			<h5 className='text-2xl font-semibold text-gray-950'>{t(item.title)}</h5>
+			<Headline
+				titleClassName='text-2xl font-semibold text-gray-950'
+				title={t(item.title)}
+			/>
 			<Button
 				onClick={onClick}
 				variant='outline'

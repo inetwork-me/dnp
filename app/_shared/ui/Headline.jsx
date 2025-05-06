@@ -6,17 +6,28 @@ const Headline = ({
 	className = "items-start",
 	title,
 	description,
+	children,
 }) => {
 	return (
-		<div className={cn("flex flex-col gap-4  text-start pb-4", className)}>
-			<h2 className={titleClassName}>{title}</h2>
-			<p
-				className={cn(
-					"text-lg font-normal leading-7 text-gray-700",
-					descriptionClassName
-				)}>
-				{description}
-			</p>
+		<div className={cn("space-y-4 text-start", className)}>
+			{children ? (
+				<div className='flex items-center flex-wrap gap-4'>
+					<h2 className={titleClassName}>{title}</h2>
+					{children}
+				</div>
+			) : (
+				<h2 className={titleClassName}>{title}</h2>
+			)}
+
+			{description && (
+				<p
+					className={cn(
+						"text-lg font-normal leading-7 text-gray-700",
+						descriptionClassName
+					)}>
+					{description}
+				</p>
+			)}
 		</div>
 	);
 };

@@ -6,7 +6,7 @@ import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 
 // icons
-import LanguageIcon from "@/public/icons/LanguageIcon.svg";
+import LanguageIcon from "@/public/icons/languageIcon.svg";
 
 const LanguageSelector = () => {
 	const t = useTranslations("app");

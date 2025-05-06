@@ -1,7 +1,17 @@
-import React from "react";
+import { useTranslations } from "next-intl";
 
-const page = () => {
-	return <div>onLine Consultation page</div>;
-};
+// components
+import BreadCrumb from "@/app/_shared/ui/BreadCrumb";
+import PackagesWrapper from "@/app/_components/packages/PackagesWrapper";
 
-export default page;
+export default function page() {
+	const t = useTranslations("app");
+
+	return (
+		<section className='bg-[#F9FAFB] '>
+			<BreadCrumb currentPage={t("navigation.onLineConsultation")} />
+
+			<PackagesWrapper headline={"navigation.onLineConsultation"} />
+		</section>
+	);
+}

@@ -4,7 +4,7 @@ import React from "react";
 
 const BrandsCards = () => {
 	return (
-		<div className=' grid grid-cols-4 gap-y-6 gap-x-8  p-0'>
+		<div className=' grid grid-cols-4 gap-y-6 gap-x-8  pt-6'>
 			{brandsList.map((brand) => (
 				<div
 					key={brand.id}

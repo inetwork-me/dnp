@@ -1,4 +1,4 @@
-import StarIcon from "@/public/icons/Star.svg";
+import StarIcon from "@/public/icons/star.svg";
 import EmptyStar from "@/public/icons/emptyStar.svg";
 import HalfStarIcon from "@/public/icons/halfStar.svg";
 

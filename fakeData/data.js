@@ -3,27 +3,27 @@ import ProductImg1 from "@/public/images/bestSellingProducts/image1.png";
 import ProductImg2 from "@/public/images/bestSellingProducts/image2.png";
 import ProductImg3 from "@/public/images/bestSellingProducts/image3.png";
 
-import BundleImage1 from "@/public/images/TopSellingBundles/Image1.png";
-import BundleImage2 from "@/public/images/TopSellingBundles/image2.png";
-import BundleImage3 from "@/public/images/TopSellingBundles/image3.png";
+import BundleImage1 from "@/public/images/topSellingBundles/image1.png";
+import BundleImage2 from "@/public/images/topSellingBundles/image2.png";
+import BundleImage3 from "@/public/images/topSellingBundles/image3.png";
 
-import Brand1 from "@/public/images/Brands/brand1.png";
-import Brand2 from "@/public/images/Brands/brand2.png";
-import Brand3 from "@/public/images/Brands/brand3.png";
-import Brand4 from "@/public/images/Brands/brand4.png";
-import Brand5 from "@/public/images/Brands/brand5.png";
-import Brand6 from "@/public/images/Brands/brand6.png";
-import Brand7 from "@/public/images/Brands/brand7.png";
-import Brand8 from "@/public/images/Brands/brand8.png";
+import Brand1 from "@/public/images/brands/brand1.png";
+import Brand2 from "@/public/images/brands/brand2.png";
+import Brand3 from "@/public/images/brands/brand3.png";
+import Brand4 from "@/public/images/brands/brand4.png";
+import Brand5 from "@/public/images/brands/brand5.png";
+import Brand6 from "@/public/images/brands/brand6.png";
+import Brand7 from "@/public/images/brands/brand7.png";
+import Brand8 from "@/public/images/brands/brand8.png";
 
 // nav social icons
-import FacebookIcon from "@/public/icons/Facebook.svg";
-import InstagramIcon from "@/public/icons/Instagram.svg";
-import TikTokIcon from "@/public/icons/Tiktok.svg";
+import FacebookIcon from "@/public/icons/facebook.svg";
+import InstagramIcon from "@/public/icons/instagram.svg";
+import TikTokIcon from "@/public/icons/tikTok.svg";
 
 // footer social icons
 import FacebookWhiteIcon from "@/public/icons/facebook-white.svg";
-import InstagramWhiteIcon from "@/public/icons/insta-white.svg";
+import InstagramWhiteIcon from "@/public/icons/Insta-white.svg";
 import TikTokWhiteIcon from "@/public/icons/tikto-white.svg";
 
 // products images
@@ -36,14 +36,14 @@ import ProdSlide3 from "@/public/images/products/slide3.png";
 import InfoIcon from "@/public/icons/info.svg";
 import Specification from "@/public/icons/specification.svg";
 import HowToUse from "@/public/icons/how-to-use.svg";
-import Caution from "@/public/icons/Caution.svg";
-import ShippingAndDelivery from "@/public/icons/Shipping&Delivery.svg";
-import ReturnPolicy from "@/public/icons/Returns-Policy.svg";
+import Caution from "@/public/icons/caution.svg";
+import ShippingAndDelivery from "@/public/icons/shipping&Delivery.svg";
+import ReturnPolicy from "@/public/icons/returns-Policy.svg";
 
 // comments images
-import Avatar1 from "@/public/images/Avatar1.png";
-import Avatar2 from "@/public/images/Avatar2.png";
-import Avatar3 from "@/public/images/Avatar3.png";
+import Avatar1 from "@/public/images/avatar1.png";
+import Avatar2 from "@/public/images/avatar2.png";
+import Avatar3 from "@/public/images/avatar3.png";
 
 // doctors images
 import Doctor1 from "@/public/images/doctors/img-1.png";
@@ -51,9 +51,9 @@ import Doctor2 from "@/public/images/doctors/img-2.png";
 import Doctor3 from "@/public/images/doctors/img-3.png";
 import Doctor4 from "@/public/images/doctors/img-4.png";
 import Doctor5 from "@/public/images/doctors/img-5.png";
-import Doctor6 from "@/public/images/doctors/Img-6.png";
-import Doctor7 from "@/public/images/doctors/Img-7.png";
-import Doctor8 from "@/public/images/doctors/Img-8.png";
+import Doctor6 from "@/public/images/doctors/img-6.png";
+import Doctor7 from "@/public/images/doctors/img-7.png";
+import Doctor8 from "@/public/images/doctors/img-8.png";
 
 // /topics image
 import Topic1 from "@/public/images/academy/img-1.jpg";
@@ -70,7 +70,7 @@ import Course3 from "@/public/images/academy/course-3.png";
 import Course4 from "@/public/images/academy/course-4.png";
 
 // bmi calculator images
-import Icon1 from "@/public/icons/bmiProfileSummary/icon1.svg";
+
 import Icon2 from "@/public/icons/bmiProfileSummary/icon2.svg";
 import Icon3 from "@/public/icons/bmiProfileSummary/icon3.svg";
 import Icon4 from "@/public/icons/bmiProfileSummary/icon4.svg";
@@ -82,30 +82,37 @@ export const navItems = [
 	{ name: "navigation.home", path: "/" },
 	{ name: "navigation.offersAndDiscounts", path: "/offersAndDiscounts" },
 	{ name: "navigation.bundles", path: "/bundles" },
-
+	// doctors list
 	{
 		name: "navigation.doctors",
 		subPages: [
 			{ name: "navigation.allDoctors", path: "/doctors/" },
 			{
-				name: "navigation.academy",
+				name: "/navigation.academy",
 				path: "/doctors/academy/",
 			},
 		],
 	},
 
 	{ name: "navigation.bmiCalculator", path: "/bmiCalculator" },
+
+	// products list
 	{
 		name: "navigation.packages",
 		subPages: [
 			{ name: "navigation.packagesList", path: "/packages" },
+
 			{
-				name: "navigation.onLineConsultation",
-				path: "/onLineConsultation",
+				name: "navigation.slimmingSessions",
+				path: "packages/slimmingSessions",
 			},
-			{ name: "navigation.slimmingSessions", path: "/slimmingSessions" },
 		],
 	},
+	{
+		name: "navigation.onLineConsultation",
+		path: "/onLineConsultation",
+	},
+
 	{ name: "navigation.recipes", path: "/recipes" },
 	{ name: "navigation.blogs", path: "/blogs" },
 	{ name: "navigation.devices", path: "/devices" },
@@ -815,7 +822,7 @@ export const bmiProfileInfo = [
 		id: 1,
 		title: "BMI Level",
 		description: "Body Mass Index is a measure",
-		icon: <Icon1 />,
+		icon: "",
 		bmiValue: "45",
 		result: "Normal",
 	},
@@ -860,5 +867,106 @@ export const bmiProfileInfo = [
 		icon: <Icon6 />,
 		bmiValue: "2212",
 		result: "Normal",
+	},
+];
+
+export const packagesList = [
+	{
+		id: 1,
+		name: "Saving Package",
+		description: "Lowest price package",
+		price: "3165",
+		discount: "0",
+		period: "Monthly Billing",
+		mostPopular: false,
+		features: [
+			{ id: 1, feature: "2 Points" },
+			{ id: 2, feature: "1 Min Months" },
+			{ id: 3, feature: "1 Min Products" },
+		],
+	},
+	{
+		id: 2,
+		name: "Bronze Package",
+		description: "Popular with (Fitness type) users",
+		price: "5545",
+		discount: "0",
+		period: "Monthly Billing",
+		mostPopular: false,
+		features: [
+			{ id: 1, feature: "4 Points" },
+			{ id: 2, feature: "3 Min Months" },
+			{ id: 3, feature: "2 Min Products" },
+		],
+	},
+	{
+		id: 3,
+		name: "Silver Package",
+		description: "Popular with (Fitness type) users",
+		price: "7920",
+		discount: "0",
+		period: "Monthly Billing",
+		mostPopular: false,
+		features: [
+			{ id: 1, feature: "7 Points" },
+			{ id: 2, feature: "5 Min Months" },
+			{ id: 3, feature: "2 Min Products" },
+		],
+	},
+	{
+		id: 4,
+		name: "Titanium Package",
+		description: "Popular with (Fitness type) users",
+		price: "11885",
+		discount: "0",
+		period: "Monthly Billing",
+		mostPopular: false,
+		features: [
+			{ id: 1, feature: "10 Points" },
+			{ id: 2, feature: "6 Min Months" },
+			{ id: 3, feature: "4 Min Products" },
+		],
+	},
+	{
+		id: 5,
+		name: "Gold Package",
+		description: "The most profitable for all users ",
+		price: "17430",
+		discount: "0",
+		period: "Monthly Billing ",
+		mostPopular: true,
+		features: [
+			{ id: 1, feature: "15 Points" },
+			{ id: 2, feature: "8 Min Months" },
+			{ id: 3, feature: "7 Min Products" },
+		],
+	},
+	{
+		id: 6,
+		name: "Diamond Package",
+		description: "Popular with (Fitness type) users",
+		price: "23768",
+		discount: "0",
+		period: "Monthly Billing",
+		mostPopular: false,
+		features: [
+			{ id: 1, feature: "22 Points" },
+			{ id: 2, feature: "12 Min Months" },
+			{ id: 3, feature: "10 Min Products" },
+		],
+	},
+	{
+		id: 7,
+		name: "VIP Package",
+		description: "Benefits for prefinals.",
+		price: "23768",
+		discount: "30",
+		period: "Monthly Billing ",
+		mostPopular: false,
+		features: [
+			{ id: 1, feature: "22 Points" },
+			{ id: 2, feature: "6 Min Months" },
+			{ id: 3, feature: "4 Min Products" },
+		],
 	},
 ];

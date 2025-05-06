@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 // icons
-import CurrencyIcon from "@/public/icons/Currency.svg";
+import CurrencyIcon from "@/public/icons/currency.svg";
 import { useCurrency } from "@/contexts/CurrencyContext";
 
 const CurrencySelector = () => {

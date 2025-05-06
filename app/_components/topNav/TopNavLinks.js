@@ -6,8 +6,8 @@ import LanguageSelector from "../LanguageSelector";
 import CurrencySelector from "../CurrencySelector";
 
 // Icons
-import TruckIcon from "@/public/icons/TruckIcon.svg";
-import UserIcon from "@/public/icons/UserIcon.svg";
+import TruckIcon from "@/public/icons/truckIcon.svg";
+import UserIcon from "@/public/icons/userIcon.svg";
 import ThemeToggle from "../ThemeToggle";
 
 const TopNavLinks = () => {
