@@ -1,8 +1,8 @@
 import React from "react";
 import BestProgramCard from "./BestProgramCard";
 
-import Image1 from "@/public/images/bestProgram/image1.png";
-import Image2 from "@/public/images/bestProgram/image2.png";
+import Image1 from "@/public/images/bestProgram/Image1.png";
+import Image2 from "@/public/images/bestProgram/Image2.png";
 import Image3 from "@/public/images/bestProgram/image3.png";
 
 const BestProgramWrapper = ({ t }) => {
