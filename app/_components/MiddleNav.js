@@ -4,8 +4,8 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import SearchIcon from '@/public/icons/SearchIcon.svg';
-import HeartIcon from '@/public/icons/heartIcon.svg';
-import CartIcon from '@/public/icons/cartIcon.svg';
+import HeartIcon from '@/public/icons/HeartIcon.svg';
+import CartIcon from '@/public/icons/CartIcon.svg';
 import { useTranslations } from 'use-intl';
 
 const MiddleNav = () => {
