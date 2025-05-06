@@ -1,32 +1,32 @@
-"use client";
+'use client';
 
-import { useState, useEffect } from "react";
-import { usePathname, useRouter } from "next/navigation";
-import { useLocale, useTranslations } from "next-intl";
-import Link from "next/link";
+import { useState, useEffect } from 'react';
+import { usePathname, useRouter } from 'next/navigation';
+import { useLocale, useTranslations } from 'next-intl';
+import Link from 'next/link';
 
 // icons
-import LanguageIcon from "@/public/icons/languageIcon.svg";
+import LanguageIcon from '@/public/icons/LanguageIcon.svg';
 
 const LanguageSelector = () => {
-	const t = useTranslations("app");
+	const t = useTranslations('app');
 	const [isOpen, setIsOpen] = useState(false);
 	const pathname = usePathname();
 	const locale = useLocale();
 	const router = useRouter();
 
-	const locales = ["en", "ar"];
+	const locales = ['en', 'ar'];
 
 	const languageNames = {
-		en: t("en"),
-		ar: t("ar"),
+		en: t('en'),
+		ar: t('ar'),
 	};
 
 	const handleChangeLanguage = (targetLocale) => {
-		const pathWithoutLocale = pathname.replace(/^\/(en|ar)/, "") || "/";
+		const pathWithoutLocale = pathname.replace(/^\/(en|ar)/, '') || '/';
 
 		const newPath =
-			targetLocale === "en"
+			targetLocale === 'en'
 				? pathWithoutLocale
 				: `/${targetLocale}${pathWithoutLocale}`;
 
@@ -41,20 +41,21 @@ const LanguageSelector = () => {
 	//  handle close dropdown when click outside
 	useEffect(() => {
 		const handleOutsideClick = (e) => {
-			if (!e.target.closest(".dropdown")) {
+			if (!e.target.closest('.dropdown')) {
 				setIsOpen(false);
 			}
 		};
 
-		document.addEventListener("click", handleOutsideClick);
-		return () => document.removeEventListener("click", handleOutsideClick);
+		document.addEventListener('click', handleOutsideClick);
+		return () => document.removeEventListener('click', handleOutsideClick);
 	}, []);
 
 	return (
 		<div className='relative dropdown' onClick={(e) => e.stopPropagation()}>
 			<button
 				className='flex items-center gap-2 pr-2 rtl:pr-0 rtl:pl-2  rtl:border-l rtl:border-0 border-r border-gray-200 cursor-pointer'
-				onClick={handleDropdownToggle}>
+				onClick={handleDropdownToggle}
+			>
 				<LanguageIcon />
 				<span className='text-sm text-gray-600'>
 					{languageNames[locale] || locale}
@@ -70,7 +71,8 @@ const LanguageSelector = () => {
 							<button
 								key={targetLocale}
 								onClick={() => handleChangeLanguage(targetLocale)}
-								className='w-full text-left flex items-center gap-1 px-2 py-2 text-sm hover:bg-gray-100 cursor-pointer'>
+								className='w-full text-left flex items-center gap-1 px-2 py-2 text-sm hover:bg-gray-100 cursor-pointer'
+							>
 								<LanguageIcon />
 								<span className='text-sm font-medium text-gray-600'>
 									{languageNames[targetLocale]}

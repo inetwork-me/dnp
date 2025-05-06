@@ -1,16 +1,16 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
-import SearchIcon from "@/public/icons/searchIcon.svg";
-import HeartIcon from "@/public/icons/heartIcon.svg";
-import CartIcon from "@/public/icons/cartIcon.svg";
-import { useTranslations } from "use-intl";
+import { useState } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import SearchIcon from '@/public/icons/SearchIcon.svg';
+import HeartIcon from '@/public/icons/heartIcon.svg';
+import CartIcon from '@/public/icons/cartIcon.svg';
+import { useTranslations } from 'use-intl';
 
 const MiddleNav = () => {
-	const t = useTranslations("app");
-	const [searchQuery, setSearchQuery] = useState("");
+	const t = useTranslations('app');
+	const [searchQuery, setSearchQuery] = useState('');
 
 	const handleSearchChange = (e) => {
 		setSearchQuery(e.target.value);
@@ -41,7 +41,7 @@ const MiddleNav = () => {
 						<form onSubmit={handleSearchSubmit} className='relative'>
 							<input
 								type='text'
-								placeholder={`${t("search")}...`}
+								placeholder={`${t('search')}...`}
 								value={searchQuery}
 								onChange={handleSearchChange}
 								className='w-full h-12 py-3 px-4 bg-gray-100 pr-10 border-none rounded-xl focus:outline-none  '
@@ -49,7 +49,8 @@ const MiddleNav = () => {
 							<button
 								type='submit'
 								className='absolute flex justify-center items-center w-8 h-8 top-1/2 transform -translate-y-1/2 bg-white rounded-[10px] shadow-custom
-    ltr:right-3 rtl:left-3'>
+    ltr:right-3 rtl:left-3'
+							>
 								<SearchIcon className='w-5' />
 							</button>
 						</form>
