@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl';
 
 // components
 
-// import BreadCrumb from "@/app/_shared/ui/BreadCrumb";
+import BreadCrumb from '@/app/_shared/ui/BreadCrumb';
 import Sidebar from '@/app/_components/myAccountContainer/sidebar/Sidebar';
 import MyAccountContainer from '@/app/_components/myAccountContainer/MyAccountContainer';
 
@@ -22,11 +22,11 @@ const Page = ({ children }) => {
 
 	return (
 		<section className='bg-[#F9FAFB]'>
-			{/* <BreadCrumb
+			<BreadCrumb
 				currentPage={t(currentPage)}
-				nestedPageTitle={t("My Account")}
-				parentPage={"myAccount"}
-			/> */}
+				nestedPageTitle={t('My Account')}
+				parentPage={'myAccount'}
+			/>
 
 			<section className='container mx-auto py-14'>
 				<div className=' relative w-full flex items-start gap-8  '>
